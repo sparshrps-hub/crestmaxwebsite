@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Spare Parts Exporter to Nigeria, Ghana, Kenya, Tanzania | CrestMAX",
   description:
     "CrestMAX exports 2-wheeler and 3-wheeler spare parts to 12+ African nations including Nigeria, Ghana, Kenya, Tanzania, Uganda and Ethiopia. FOB Mumbai or CIF any African port.",
-  alternates: { canonical: "https://crestmaxwebsite.vercel.app/markets" },
+  alternates: { canonical: "https://crestmax.in/markets" },
 };
 
 export default function MarketsPage() {

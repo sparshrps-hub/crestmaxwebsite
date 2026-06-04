@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "About CrestMAX | Indian Spare Parts Exporter for African Markets",
   description:
     "CrestMAX, a venture by RPS Infrastructures — bridging India's spare parts manufacturing with Africa's growing 2-wheeler and 3-wheeler market. Based in Ludhiana, Punjab.",
-  alternates: { canonical: "https://crestmaxwebsite.vercel.app/about" },
+  alternates: { canonical: "https://crestmax.in/about" },
 };
 
 export default function AboutPage() {

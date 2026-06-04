@@ -31,11 +31,11 @@ const itemListSchema = {
   description:
     "Wholesale spare parts exported from India for Bajaj, TVS, Hero motorcycles and auto rickshaws across African markets",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Bajaj Boxer Spare Parts", url: "https://crestmaxwebsite.vercel.app/products/bajaj-boxer" },
-    { "@type": "ListItem", position: 2, name: "TVS HLX Spare Parts", url: "https://crestmaxwebsite.vercel.app/products/tvs-hlx" },
-    { "@type": "ListItem", position: 3, name: "CT100 Spare Parts", url: "https://crestmaxwebsite.vercel.app/products/ct100" },
-    { "@type": "ListItem", position: 4, name: "Bajaj RE Auto Rickshaw Parts", url: "https://crestmaxwebsite.vercel.app/products/bajaj-re" },
-    { "@type": "ListItem", position: 5, name: "TVS King Three Wheeler Parts", url: "https://crestmaxwebsite.vercel.app/products/tvs-king" },
+    { "@type": "ListItem", position: 1, name: "Bajaj Boxer Spare Parts", url: "https://crestmax.in/products/bajaj-boxer" },
+    { "@type": "ListItem", position: 2, name: "TVS HLX Spare Parts", url: "https://crestmax.in/products/tvs-hlx" },
+    { "@type": "ListItem", position: 3, name: "CT100 Spare Parts", url: "https://crestmax.in/products/ct100" },
+    { "@type": "ListItem", position: 4, name: "Bajaj RE Auto Rickshaw Parts", url: "https://crestmax.in/products/bajaj-re" },
+    { "@type": "ListItem", position: 5, name: "TVS King Three Wheeler Parts", url: "https://crestmax.in/products/tvs-king" },
   ],
 };
 
@@ -187,7 +187,7 @@ export default function ProductsPage() {
             <Link href="/contact" className="btn-gold-fill" style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "14px", letterSpacing: "2px", textTransform: "uppercase", background: "var(--cm-gold)", color: "var(--cm-navy-deep)", padding: "14px 32px", borderRadius: "2px", textDecoration: "none", display: "inline-block" }}>
               Tell Us What You Need →
             </Link>
-            <a href="https://wa.me/919855739773" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "14px", letterSpacing: "2px", textTransform: "uppercase", background: "#25D366", color: "#FFFFFF", padding: "14px 32px", borderRadius: "2px", textDecoration: "none", display: "inline-block" }}>
+            <a href="https://wa.me/917087866759" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "14px", letterSpacing: "2px", textTransform: "uppercase", background: "#25D366", color: "#FFFFFF", padding: "14px 32px", borderRadius: "2px", textDecoration: "none", display: "inline-block" }}>
               WhatsApp Us Directly
             </a>
           </div>

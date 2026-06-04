@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://crestmaxwebsite.vercel.app/</loc><priority>1.0</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://crestmaxwebsite.vercel.app/about</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://crestmaxwebsite.vercel.app/products</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://crestmaxwebsite.vercel.app/products/bajaj-boxer</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://crestmaxwebsite.vercel.app/products/bajaj-re</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://crestmaxwebsite.vercel.app/products/tvs-hlx</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://crestmaxwebsite.vercel.app/products/ct100</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://crestmaxwebsite.vercel.app/products/tvs-king</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://crestmaxwebsite.vercel.app/applications</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://crestmaxwebsite.vercel.app/why-crestmax</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://crestmaxwebsite.vercel.app/markets</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://crestmaxwebsite.vercel.app/contact</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/</loc><priority>1.0</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/about</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/products</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://crestmax.in/products/bajaj-boxer</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/products/bajaj-re</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/products/tvs-hlx</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/products/ct100</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/products/tvs-king</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/applications</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/why-crestmax</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/contact</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
 </urlset>

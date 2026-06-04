@@ -16,27 +16,27 @@ const metaMap: Record<string, { title: string; description: string; canonical: s
   "bajaj-boxer": {
     title: "Bajaj Boxer Spare Parts — Wholesale Export from India | CrestMAX",
     description: "Export-quality Bajaj Boxer spare parts from India to Africa. Wholesale B2B supply — engine, clutch, brakes, electrical, and more. FOB Mumbai or CIF.",
-    canonical: "https://crestmaxwebsite.vercel.app/products/bajaj-boxer",
+    canonical: "https://crestmax.in/products/bajaj-boxer",
   },
   "tvs-hlx": {
     title: "TVS HLX Spare Parts — Wholesale Indian Exporter | CrestMAX",
     description: "TVS HLX spare parts exported from India to Kenya, Tanzania, Uganda and East Africa. Wholesale B2B supply. FOB Mumbai or CIF any African port.",
-    canonical: "https://crestmaxwebsite.vercel.app/products/tvs-hlx",
+    canonical: "https://crestmax.in/products/tvs-hlx",
   },
   ct100: {
     title: "CT100 Motorcycle Spare Parts — Export from India to Africa | CrestMAX",
     description: "CT100-compatible spare parts exported wholesale from India to West Africa. FOB Mumbai or CIF.",
-    canonical: "https://crestmaxwebsite.vercel.app/products/ct100",
+    canonical: "https://crestmax.in/products/ct100",
   },
   "bajaj-re": {
     title: "Bajaj RE / Keke Napep Parts — India to Africa Export | CrestMAX",
     description: "Bajaj RE and Keke Napep spare parts exported from India to Nigeria, Kenya, Ethiopia and across Africa. Wholesale B2B supply.",
-    canonical: "https://crestmaxwebsite.vercel.app/products/bajaj-re",
+    canonical: "https://crestmax.in/products/bajaj-re",
   },
   "tvs-king": {
     title: "TVS King Three-Wheeler Parts — B2B India Export | CrestMAX",
     description: "TVS King spare parts exported from India to Uganda, Tanzania, Kenya. Wholesale B2B supply. FOB Mumbai or CIF any African port.",
-    canonical: "https://crestmaxwebsite.vercel.app/products/tvs-king",
+    canonical: "https://crestmax.in/products/tvs-king",
   },
 };
 
@@ -250,7 +250,7 @@ export default async function ModelPage({ params }: Props) {
             <Link href="/contact" style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase", background: "var(--cm-gold)", color: "var(--cm-navy-deep)", padding: "12px 28px", borderRadius: "2px", textDecoration: "none" }}>
               Tell Us What You Need →
             </Link>
-            <a href="https://wa.me/919855739773" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase", background: "#25D366", color: "#FFFFFF", padding: "12px 28px", borderRadius: "2px", textDecoration: "none" }}>
+            <a href="https://wa.me/917087866759" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase", background: "#25D366", color: "#FFFFFF", padding: "12px 28px", borderRadius: "2px", textDecoration: "none" }}>
               WhatsApp Us
             </a>
           </div>

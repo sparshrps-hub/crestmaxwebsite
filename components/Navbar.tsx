@@ -16,6 +16,10 @@ const navLinks = [
   { href: "/contact", label: "Contact" },
 ];
 
+const mobileOnlyLinks = [
+  { href: "/contact#agent", label: "Trade Partners / Agents" },
+];
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -52,7 +56,7 @@ export default function Navbar() {
           right: 0,
           zIndex: 50,
           transition: "background 0.3s, box-shadow 0.3s",
-          background: scrolled ? "var(--cm-navy-mid)" : "transparent",
+          background: scrolled ? "var(--cm-navy-mid)" : "rgba(13,27,42,0.85)",
           boxShadow: scrolled ? "0 2px 20px rgba(0,0,0,0.4)" : "none",
           borderBottom: scrolled ? "1px solid var(--cm-gold-border)" : "none",
         }}
@@ -244,6 +248,31 @@ export default function Navbar() {
                   }}
                 >
                   {link.label}
+                </Link>
+              </li>
+            ))}
+            {/* Mobile-only: Trade Partners / Agents */}
+            {mobileOnlyLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  style={{
+                    fontFamily: "Rajdhani, sans-serif",
+                    fontWeight: 700,
+                    fontSize: "18px",
+                    letterSpacing: "2px",
+                    textTransform: "uppercase",
+                    color: "var(--cm-gold)",
+                    textDecoration: "none",
+                    padding: "14px 0",
+                    borderBottom: "1px solid rgba(255,255,255,0.06)",
+                    minHeight: "44px",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "8px",
+                  }}
+                >
+                  ★ {link.label}
                 </Link>
               </li>
             ))}

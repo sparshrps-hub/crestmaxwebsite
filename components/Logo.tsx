@@ -37,16 +37,16 @@ export default function Logo({ size = "sm" }: LogoProps) {
           MAX
         </span>
       </div>
-      {/* Venture tagline */}
+      {/* Venture tagline — increased size for legibility */}
       <span
         style={{
           fontFamily: "Nunito Sans, sans-serif",
-          fontWeight: 300,
-          fontSize: isLg ? "9px" : "7px",
-          letterSpacing: "2px",
+          fontWeight: 400,
+          fontSize: isLg ? "11px" : "9px",
+          letterSpacing: "1.5px",
           textTransform: "uppercase",
-          color: "rgba(201,168,76,0.7)",
-          marginTop: isLg ? "2px" : "1px",
+          color: "rgba(201,168,76,0.85)",
+          marginTop: isLg ? "3px" : "2px",
           whiteSpace: "nowrap",
         }}
       >

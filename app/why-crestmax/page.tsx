@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Why Choose CrestMAX | Indian Parts vs Chinese Parts | Africa Export",
   description:
     "CrestMAX delivers OEM-compatible Indian spare parts with full documentation, named director contacts, and long-term trade reliability. See why Indian parts outperform Chinese alternatives across African markets.",
-  alternates: { canonical: "https://crestmaxwebsite.vercel.app/why-crestmax" },
+  alternates: { canonical: "https://crestmax.in/why-crestmax" },
 };
 
 const pillars = [

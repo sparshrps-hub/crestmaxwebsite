@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Applications & Compatibility | 2-Wheeler & 3-Wheeler Spare Parts | CrestMAX",
   description:
     "Spare parts for Bajaj Boxer, TVS HLX, CT100, Bajaj RE/Keke Napep and TVS King — OEM-compatible Indian parts built for Africa's most popular vehicles.",
-  alternates: { canonical: "https://crestmaxwebsite.vercel.app/applications" },
+  alternates: { canonical: "https://crestmax.in/applications" },
 };
 
 const twoWheelers = [

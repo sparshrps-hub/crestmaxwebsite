@@ -9,14 +9,14 @@ export const metadata: Metadata = {
   title: "CrestMAX | Indian 2-Wheeler & 3-Wheeler Spare Parts Exporter to Africa",
   description:
     "CrestMAX, a venture by RPS Infrastructures — exporting Bajaj, TVS, Hero spare parts to Nigeria, Ghana, Kenya and 12+ African nations. FOB Mumbai or CIF any African port. B2B wholesale enquiries welcome.",
-  alternates: { canonical: "https://crestmaxwebsite.vercel.app/" },
+  alternates: { canonical: "https://crestmax.in/" },
 };
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://crestmaxwebsite.vercel.app" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://crestmax.in" },
   ],
 };
 
