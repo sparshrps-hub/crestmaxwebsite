@@ -9,6 +9,7 @@ type FormData = {
   country: string;
   email: string;
   whatsapp: string;
+  enquiryType: string;
   productInterest: string[];
   partsNeeded: string;
   howHeard: string;
@@ -60,19 +61,11 @@ export default function EnquiryForm() {
 
   if (submitted) {
     return (
-      <div style={{
-        background: "var(--cm-navy-mid)",
-        border: "1px solid var(--cm-gold-border)",
-        borderRadius: "4px",
-        padding: "48px 40px",
-        textAlign: "center",
-      }}>
+      <div style={{ background: "var(--cm-navy-mid)", border: "1px solid var(--cm-gold-border)", borderRadius: "4px", padding: "48px 40px", textAlign: "center" }}>
         <div style={{ fontSize: "48px", marginBottom: "16px" }}>✓</div>
-        <h3 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "28px", letterSpacing: "2px", color: "var(--cm-gold)", marginBottom: "12px" }}>
-          ENQUIRY RECEIVED
-        </h3>
+        <h3 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "28px", letterSpacing: "2px", color: "var(--cm-gold)", marginBottom: "12px" }}>ENQUIRY RECEIVED</h3>
         <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "16px", color: "rgba(255,255,255,0.65)", lineHeight: "1.7" }}>
-          Thank you! We&apos;ll respond within 24 hours with availability and pricing.
+          Thank you! We carefully review every enquiry and will get back to you with accurate pricing and availability.
         </p>
       </div>
     );
@@ -80,83 +73,56 @@ export default function EnquiryForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-      {/* Full Name */}
       <div>
         <label style={labelStyle}>Full Name *</label>
-        <input
-          {...register("fullName", { required: "Full name is required" })}
-          type="text"
-          placeholder="Your full name"
-          style={inputStyle}
-        />
+        <input {...register("fullName", { required: "Full name is required" })} type="text" placeholder="Your full name" style={inputStyle} />
         {errors.fullName && <p style={errorStyle}>{errors.fullName.message}</p>}
       </div>
 
-      {/* Company Name */}
       <div>
         <label style={labelStyle}>Company Name *</label>
-        <input
-          {...register("companyName", { required: "Company name is required" })}
-          type="text"
-          placeholder="Your company name"
-          style={inputStyle}
-        />
+        <input {...register("companyName", { required: "Company name is required" })} type="text" placeholder="Your company name" style={inputStyle} />
         {errors.companyName && <p style={errorStyle}>{errors.companyName.message}</p>}
       </div>
 
-      {/* Country */}
       <div>
         <label style={labelStyle}>Country *</label>
-        <select
-          {...register("country", { required: "Please select your country" })}
-          style={{ ...inputStyle, appearance: "none" }}
-        >
+        <select {...register("country", { required: "Please select your country" })} style={{ ...inputStyle, appearance: "none" }}>
           <option value="">Select your country</option>
-          {africanCountries.map((c) => (
-            <option key={c} value={c}>{c}</option>
-          ))}
+          {africanCountries.map((c) => <option key={c} value={c}>{c}</option>)}
         </select>
         {errors.country && <p style={errorStyle}>{errors.country.message}</p>}
       </div>
 
-      {/* Email */}
+      <div>
+        <label style={labelStyle}>Type of Enquiry *</label>
+        <select {...register("enquiryType", { required: "Please select enquiry type" })} style={{ ...inputStyle, appearance: "none" }}>
+          <option value="">Select enquiry type</option>
+          <option value="catalogue-parts">I need parts from your catalogue</option>
+          <option value="sourcing-request">I need a part not listed on your website (Sourcing Request)</option>
+          <option value="trade-partner">I am a sales agent / trade partner</option>
+          <option value="general">General enquiry</option>
+        </select>
+        {errors.enquiryType && <p style={errorStyle}>{errors.enquiryType.message}</p>}
+      </div>
+
       <div>
         <label style={labelStyle}>Email Address *</label>
-        <input
-          {...register("email", {
-            required: "Email is required",
-            pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Enter a valid email" }
-          })}
-          type="email"
-          placeholder="your@email.com"
-          style={inputStyle}
-        />
+        <input {...register("email", { required: "Email is required", pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Enter a valid email" } })} type="email" placeholder="your@email.com" style={inputStyle} />
         {errors.email && <p style={errorStyle}>{errors.email.message}</p>}
       </div>
 
-      {/* WhatsApp */}
       <div>
         <label style={labelStyle}>WhatsApp Number (with country code)</label>
-        <input
-          {...register("whatsapp")}
-          type="tel"
-          placeholder="+234 XXXX XXXXXX"
-          style={inputStyle}
-        />
+        <input {...register("whatsapp")} type="tel" placeholder="+234 XXXX XXXXXX" style={inputStyle} />
       </div>
 
-      {/* Product Interest */}
       <div>
         <label style={labelStyle}>Product Interest *</label>
         <div style={{ display: "flex", gap: "24px", flexWrap: "wrap" }}>
           {["2-Wheeler Parts", "3-Wheeler Parts", "Both"].map((opt) => (
             <label key={opt} style={{ display: "flex", alignItems: "center", gap: "8px", fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.7)", cursor: "pointer" }}>
-              <input
-                {...register("productInterest", { required: "Please select at least one" })}
-                type="checkbox"
-                value={opt}
-                style={{ accentColor: "var(--cm-gold)", width: "16px", height: "16px" }}
-              />
+              <input {...register("productInterest", { required: "Please select at least one" })} type="checkbox" value={opt} style={{ accentColor: "var(--cm-gold)", width: "16px", height: "16px" }} />
               {opt}
             </label>
           ))}
@@ -164,18 +130,11 @@ export default function EnquiryForm() {
         {errors.productInterest && <p style={errorStyle}>{errors.productInterest.message}</p>}
       </div>
 
-      {/* Parts Needed */}
       <div>
         <label style={labelStyle}>Specific Parts Needed</label>
-        <textarea
-          {...register("partsNeeded")}
-          placeholder="List the parts you need, with quantities if known..."
-          rows={5}
-          style={{ ...inputStyle, resize: "vertical" }}
-        />
+        <textarea {...register("partsNeeded")} placeholder="List the parts you need, with quantities if known..." rows={5} style={{ ...inputStyle, resize: "vertical" }} />
       </div>
 
-      {/* How did you hear */}
       <div>
         <label style={labelStyle}>How did you hear about us?</label>
         <select {...register("howHeard")} style={{ ...inputStyle, appearance: "none" }}>
@@ -189,27 +148,10 @@ export default function EnquiryForm() {
         </select>
       </div>
 
-      {/* Submit */}
       <button
         type="submit"
-        style={{
-          width: "100%",
-          background: "var(--cm-gold)",
-          color: "var(--cm-navy-deep)",
-          fontFamily: "Rajdhani, sans-serif",
-          fontWeight: 700,
-          fontSize: "16px",
-          letterSpacing: "3px",
-          textTransform: "uppercase",
-          border: "none",
-          borderRadius: "2px",
-          padding: "16px",
-          cursor: "pointer",
-          transition: "background 0.2s, transform 0.1s",
-          marginTop: "8px",
-        }}
-        onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "var(--cm-gold-bright)"; }}
-        onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = "var(--cm-gold)"; }}
+        style={{ width: "100%", background: "var(--cm-gold)", color: "var(--cm-navy-deep)", fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "16px", letterSpacing: "3px", textTransform: "uppercase", border: "none", borderRadius: "2px", padding: "16px", cursor: "pointer", transition: "background 0.2s", marginTop: "8px" }}
+        className="btn-gold-fill"
       >
         Submit Enquiry
       </button>

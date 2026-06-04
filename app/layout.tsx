@@ -27,9 +27,50 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Crestmax Pvt Ltd | Indian Spare Parts Exporter for Africa | 2-Wheeler & 3-Wheeler Parts",
-  description: "Crestmax Pvt Ltd — Premium 2-wheeler and 3-wheeler spare parts exported from India to Africa. Wholesale B2B supplier for Nigeria, Ghana, Kenya, Tanzania and 12+ African nations.",
-  keywords: "India spare parts export Africa, Bajaj RE parts Nigeria, TVS King parts Kenya, Keke Napep parts supplier, 2-wheeler spare parts exporter Africa",
+  title: "CrestMAX | Indian 2-Wheeler & 3-Wheeler Spare Parts Exporter to Africa",
+  description:
+    "CrestMAX, a venture by RPS Infrastructures — exporting Bajaj, TVS, Hero spare parts to Nigeria, Ghana, Kenya and 12+ African nations. FOB Mumbai or CIF any African port. B2B wholesale enquiries welcome.",
+  keywords:
+    "spare parts exporter India Africa, Bajaj spare parts wholesale, Keke Napep parts supplier, 2 wheeler spare parts Nigeria, motorcycle spare parts importer Africa, 3 wheeler spare parts Kenya, Bajaj RE spare parts export, TVS King parts wholesale, Indian spare parts exporter, Ludhiana spare parts exporter",
+  metadataBase: new URL("https://crestmaxwebsite.vercel.app"),
+};
+
+// Organization JSON-LD — injected site-wide
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "CrestMAX",
+  alternateName: "Crestmax Pvt Ltd",
+  description:
+    "Indian exporter of 2-wheeler and 3-wheeler spare parts to wholesale importers across Africa. A venture by RPS Infrastructures.",
+  url: "https://crestmaxwebsite.vercel.app",
+  logo: "https://crestmaxwebsite.vercel.app/logo.png",
+  foundingLocation: "Ludhiana, Punjab, India",
+  email: "info@crestmax.in",
+  telephone: "+919855739773",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Ludhiana",
+    addressRegion: "Punjab",
+    addressCountry: "IN",
+  },
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+919855739773",
+      contactType: "sales",
+      areaServed: ["NG", "GH", "KE", "TZ", "UG", "ET", "CD", "MA", "AO", "ZA", "RW"],
+      availableLanguage: "English",
+    },
+    {
+      "@type": "ContactPoint",
+      telephone: "+2349020636510",
+      contactType: "sales",
+      areaServed: "NG",
+      availableLanguage: "English",
+    },
+  ],
+  sameAs: [],
 };
 
 export default function RootLayout({
@@ -43,11 +84,15 @@ export default function RootLayout({
       className={`${rajdhani.variable} ${nunitoSans.variable} ${ibmPlexMono.variable}`}
       style={{ fontFamily: "var(--font-nunito-sans, 'Nunito Sans', sans-serif)" }}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
       <body style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
         <Navbar />
-        <main style={{ flex: 1 }}>
-          {children}
-        </main>
+        <main style={{ flex: 1 }}>{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>

@@ -1,46 +1,45 @@
 import type { Metadata } from "next";
-import { MessageCircle, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import Link from "next/link";
 import EnquiryForm from "@/components/EnquiryForm";
 
 export const metadata: Metadata = {
-  title: "Contact Crestmax | Request a Parts Quote | B2B Export Enquiry",
-  description: "Contact Crestmax Pvt Ltd for spare parts quotes, wholesale pricing, and export logistics. We respond within 24 hours.",
+  title: "Contact CrestMAX | Request a Spare Parts Export Quote | B2B India to Africa",
+  description:
+    "Contact Rahul Khullar or Sparsh Khullar at CrestMAX directly. Request a wholesale spare parts quote. Email info@crestmax.in or WhatsApp +91 98557 39773.",
+  alternates: { canonical: "https://crestmaxwebsite.vercel.app/contact" },
+};
+
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Contact CrestMAX — Spare Parts Export Enquiry",
+  description: "Contact Rahul Khullar or Sparsh Khullar at CrestMAX for wholesale spare parts quotes. B2B export from India to Africa.",
+  url: "https://crestmaxwebsite.vercel.app/contact",
 };
 
 export default function ContactPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }} />
+
       {/* Hero */}
-      <section style={{
-        background: "var(--cm-navy-deep)",
-        paddingTop: "140px",
-        paddingBottom: "60px",
-        textAlign: "center",
-        borderBottom: "1px solid var(--cm-gold-border)",
-      }}>
+      <section style={{ background: "var(--cm-navy-deep)", paddingTop: "140px", paddingBottom: "60px", textAlign: "center", borderBottom: "1px solid var(--cm-gold-border)" }}>
         <div style={{ maxWidth: "700px", margin: "0 auto", padding: "0 24px" }}>
-          <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "5px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "16px" }}>
-            Get in Touch
-          </p>
-          <h1 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "clamp(36px, 6vw, 60px)", letterSpacing: "4px", lineHeight: "0.95", color: "#FFFFFF", textTransform: "uppercase", margin: "0 0 16px" }}>
-            Request a Quote
+          <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "5px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "16px" }}>Get in Touch</p>
+          <h1 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "clamp(28px, 5vw, 52px)", letterSpacing: "3px", lineHeight: "1.0", color: "#FFFFFF", textTransform: "uppercase", margin: "0 0 16px" }}>
+            Contact CrestMAX —<br />
+            <span style={{ color: "var(--cm-gold)" }}>Request a Spare Parts Export Quote</span>
           </h1>
           <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "16px", color: "rgba(255,255,255,0.5)", lineHeight: "1.7" }}>
-            Send us your parts list — we&apos;ll respond within 24 hours with pricing and availability.
+            Send us your parts list — we carefully review your requirements and get back to you with accurate pricing and availability.
           </p>
         </div>
       </section>
 
       {/* Main content */}
       <section style={{ padding: "72px 24px", background: "var(--cm-navy)" }}>
-        <div style={{
-          maxWidth: "1280px",
-          margin: "0 auto",
-          display: "grid",
-          gridTemplateColumns: "3fr 2fr",
-          gap: "56px",
-          alignItems: "start",
-        }}
+        <div style={{ maxWidth: "1280px", margin: "0 auto", display: "grid", gridTemplateColumns: "minmax(0, 3fr) minmax(0, 2fr)", gap: "56px", alignItems: "start" }}
           className="contact-grid"
         >
           {/* Form */}
@@ -52,117 +51,144 @@ export default function ContactPage() {
           </div>
 
           {/* Contact Details */}
-          <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
-            {/* WhatsApp */}
-            <div style={{
-              background: "var(--cm-navy-mid)",
-              border: "1px solid var(--cm-gold-border)",
-              borderRadius: "2px",
-              padding: "28px",
-            }}>
-              <a
-                href="https://wa.me/91XXXXXXXXXX"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "16px",
-                  textDecoration: "none",
-                  background: "#25D366",
-                  borderRadius: "2px",
-                  padding: "16px 20px",
-                  marginBottom: "20px",
-                  transition: "opacity 0.2s",
-                }}
-                className="wa-link"
-              >
-                <MessageCircle size={24} color="white" fill="white" />
-                <span style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "18px", letterSpacing: "2px", color: "white", textTransform: "uppercase" }}>
-                  Chat on WhatsApp
-                </span>
-              </a>
-              <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "rgba(255,255,255,0.4)" }}>
-                Fastest way to reach us. Send your parts list directly on WhatsApp.
-              </p>
+          <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+
+            {/* Director cards */}
+            <div style={{ background: "var(--cm-navy-mid)", border: "1px solid var(--cm-gold-border)", borderRadius: "2px", padding: "28px" }}>
+              <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "3px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "20px" }}>Direct Contacts</p>
+
+              {/* Rahul */}
+              <div style={{ marginBottom: "24px", paddingBottom: "24px", borderBottom: "1px solid var(--cm-border)" }}>
+                <p style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "18px", letterSpacing: "1px", color: "#FFFFFF", textTransform: "uppercase", marginBottom: "4px" }}>Rahul Khullar</p>
+                <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "2px", color: "var(--cm-gold)", marginBottom: "12px" }}>DIRECTOR</p>
+                <a href="tel:+2349020636510" style={{ display: "flex", alignItems: "center", gap: "10px", fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.7)", textDecoration: "none", marginBottom: "8px" }}>
+                  <Phone size={14} color="var(--cm-gold)" />
+                  +234 902 063 6510
+                  <span style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "10px", color: "rgba(255,255,255,0.35)", letterSpacing: "1px" }}>NIGERIA</span>
+                </a>
+                <a href="tel:+919855739773" style={{ display: "flex", alignItems: "center", gap: "10px", fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.7)", textDecoration: "none" }}>
+                  <Phone size={14} color="var(--cm-gold)" />
+                  +91 98557 39773
+                  <span style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "10px", color: "rgba(255,255,255,0.35)", letterSpacing: "1px" }}>INDIA</span>
+                </a>
+              </div>
+
+              {/* Sparsh */}
+              <div>
+                <p style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "18px", letterSpacing: "1px", color: "#FFFFFF", textTransform: "uppercase", marginBottom: "4px" }}>Sparsh Khullar</p>
+                <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "2px", color: "var(--cm-gold)", marginBottom: "12px" }}>DIRECTOR</p>
+                <a href="tel:+918847258146" style={{ display: "flex", alignItems: "center", gap: "10px", fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.7)", textDecoration: "none" }}>
+                  <Phone size={14} color="var(--cm-gold)" />
+                  +91 88472 58146
+                </a>
+              </div>
             </div>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/919855739773"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="wa-link"
+              style={{ display: "flex", alignItems: "center", gap: "14px", textDecoration: "none", background: "#25D366", borderRadius: "2px", padding: "16px 20px" }}
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              <span style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "16px", letterSpacing: "2px", color: "white", textTransform: "uppercase" }}>
+                Chat on WhatsApp
+              </span>
+            </a>
 
             {/* Contact details */}
-            <div style={{
-              background: "var(--cm-navy-mid)",
-              border: "1px solid var(--cm-gold-border)",
-              borderRadius: "2px",
-              padding: "28px",
-              display: "flex",
-              flexDirection: "column",
-              gap: "20px",
-            }}>
-              <div style={{ display: "flex", gap: "14px", alignItems: "flex-start" }}>
-                <Mail size={18} color="var(--cm-gold)" style={{ flexShrink: 0, marginTop: "2px" }} />
+            <div style={{ background: "var(--cm-navy-mid)", border: "1px solid var(--cm-gold-border)", borderRadius: "2px", padding: "24px", display: "flex", flexDirection: "column", gap: "16px" }}>
+              <a href="mailto:info@crestmax.in" style={{ display: "flex", gap: "12px", alignItems: "flex-start", textDecoration: "none" }}>
+                <Mail size={16} color="var(--cm-gold)" style={{ flexShrink: 0, marginTop: "2px" }} />
                 <div>
-                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 600, fontSize: "13px", color: "rgba(255,255,255,0.5)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "4px" }}>Email</p>
-                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "#FFFFFF" }}>info@crestmaxpvtltd.com</p>
+                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 600, fontSize: "11px", color: "rgba(255,255,255,0.4)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "2px" }}>Email</p>
+                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "#FFFFFF" }}>info@crestmax.in</p>
+                </div>
+              </a>
+              <div style={{ height: "1px", background: "var(--cm-border)" }} />
+              <div style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+                <MapPin size={16} color="var(--cm-gold)" style={{ flexShrink: 0, marginTop: "2px" }} />
+                <div>
+                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 600, fontSize: "11px", color: "rgba(255,255,255,0.4)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "2px" }}>Location</p>
+                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "#FFFFFF" }}>Ludhiana, Punjab, India</p>
                 </div>
               </div>
-
               <div style={{ height: "1px", background: "var(--cm-border)" }} />
-
-              <div style={{ display: "flex", gap: "14px", alignItems: "flex-start" }}>
-                <MapPin size={18} color="var(--cm-gold)" style={{ flexShrink: 0, marginTop: "2px" }} />
+              <div style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+                <MapPin size={16} color="var(--cm-gold)" style={{ flexShrink: 0, marginTop: "2px" }} />
                 <div>
-                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 600, fontSize: "13px", color: "rgba(255,255,255,0.5)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "4px" }}>Location</p>
-                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "#FFFFFF" }}>Ludhiana, Punjab, India</p>
+                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 600, fontSize: "11px", color: "rgba(255,255,255,0.4)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "2px" }}>Export From</p>
+                  <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "13px", color: "var(--cm-gold)" }}>FOB Mumbai | CIF Any African Port</p>
                 </div>
               </div>
-
               <div style={{ height: "1px", background: "var(--cm-border)" }} />
-
-              <div style={{ display: "flex", gap: "14px", alignItems: "flex-start" }}>
-                <MapPin size={18} color="var(--cm-gold)" style={{ flexShrink: 0, marginTop: "2px" }} />
+              <div style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+                <Clock size={16} color="var(--cm-gold)" style={{ flexShrink: 0, marginTop: "2px" }} />
                 <div>
-                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 600, fontSize: "13px", color: "rgba(255,255,255,0.5)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "4px" }}>Export From</p>
-                  <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "14px", color: "var(--cm-gold)" }}>Mumbai Port · Chennai Port (FOB)</p>
-                </div>
-              </div>
-
-              <div style={{ height: "1px", background: "var(--cm-border)" }} />
-
-              <div style={{ display: "flex", gap: "14px", alignItems: "flex-start" }}>
-                <Clock size={18} color="var(--cm-gold)" style={{ flexShrink: 0, marginTop: "2px" }} />
-                <div>
-                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 600, fontSize: "13px", color: "rgba(255,255,255,0.5)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "4px" }}>Business Hours</p>
-                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "#FFFFFF" }}>Mon–Sat, 9:00 AM – 6:00 PM IST</p>
+                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 600, fontSize: "11px", color: "rgba(255,255,255,0.4)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "2px" }}>Business Hours</p>
+                  <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "#FFFFFF" }}>Mon–Sat, 9:00 AM – 6:00 PM IST</p>
                 </div>
               </div>
             </div>
 
-            {/* Response promise */}
-            <div style={{
-              background: "rgba(201,168,76,0.06)",
-              border: "1px solid var(--cm-gold-border)",
-              borderRadius: "2px",
-              padding: "20px",
-              textAlign: "center",
-            }}>
-              <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "3px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "8px" }}>
-                Our Promise
+            {/* Updated promise box */}
+            <div style={{ background: "rgba(201,168,76,0.06)", border: "1px solid var(--cm-gold-border)", borderRadius: "2px", padding: "20px", textAlign: "center" }}>
+              <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "3px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "8px" }}>Our Promise</p>
+              <p style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "22px", letterSpacing: "1px", color: "#FFFFFF", margin: "0 0 8px" }}>
+                We Understand Your Requirements
               </p>
-              <p style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "26px", letterSpacing: "1px", color: "#FFFFFF", margin: "0 0 4px" }}>
-                24-Hour Response
-              </p>
-              <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "rgba(255,255,255,0.4)" }}>
-                We reply to every enquiry within one business day.
+              <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "rgba(255,255,255,0.5)", lineHeight: "1.65" }}>
+                Every enquiry is reviewed carefully by our team. We take time to understand your specific parts needs and respond with accurate pricing and availability.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Sales Agent / Trade Partner */}
+      <section style={{ padding: "64px 24px", background: "var(--cm-navy-mid)", borderTop: "1px solid var(--cm-gold-border)" }}>
+        <div style={{ maxWidth: "1280px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "40px", alignItems: "center" }}>
+          <div>
+            <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "4px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "16px" }}>For Trade Representatives</p>
+            <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "clamp(24px, 4vw, 36px)", letterSpacing: "2px", color: "#FFFFFF", textTransform: "uppercase", marginBottom: "20px" }}>
+              Sales Agents &amp;<br />Trade Partners
+            </h2>
+            <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "rgba(255,255,255,0.65)", lineHeight: "1.8", marginBottom: "16px" }}>
+              Are you a sales representative or trade partner? We work with agents across African markets. If you work with importers, distributors, or fleet operators who need a reliable Indian parts supplier, reach out to us directly.
+            </p>
+            <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "rgba(255,255,255,0.65)", lineHeight: "1.8" }}>
+              We offer clear, structured arrangements for agents who bring us genuine wholesale buyers.
+            </p>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <Link
+              href="/contact"
+              style={{ display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "15px", letterSpacing: "2px", textTransform: "uppercase", background: "var(--cm-gold)", color: "var(--cm-navy-deep)", padding: "16px 32px", borderRadius: "2px", textDecoration: "none", textAlign: "center" }}
+            >
+              Partner With Us
+            </Link>
+            <a
+              href="https://wa.me/919855739773"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "15px", letterSpacing: "2px", textTransform: "uppercase", background: "#25D366", color: "#FFFFFF", padding: "16px 32px", borderRadius: "2px", textDecoration: "none", textAlign: "center" }}
+            >
+              WhatsApp Us Directly
+            </a>
+            <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "rgba(255,255,255,0.35)", textAlign: "center" }}>
+              Select &ldquo;Sales Agent / Trade Partner&rdquo; in the enquiry form above
+            </p>
+          </div>
+        </div>
+      </section>
+
       <style>{`
         @media (max-width: 768px) {
-          .contact-grid {
-            grid-template-columns: 1fr !important;
-          }
+          .contact-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </>
