@@ -6,8 +6,63 @@ import EnquiryForm from "@/components/EnquiryForm";
 export const metadata: Metadata = {
   title: "Request Export Quote | CrestMAX — Indian Spare Parts to Africa",
   description:
-    "Request a wholesale spare parts export quote from CrestMAX. Send your parts list and we respond with pricing and availability. Email info@crestmax.in or call +91 70878 66759.",
+    "Request a wholesale spare parts export quote from CrestMAX. WhatsApp our sales team or fill the form — we respond with accurate pricing within 24–48 hours.",
   alternates: { canonical: "https://crestmax.in/contact" },
+  openGraph: {
+    title: "Request Export Quote | CrestMAX — Indian Spare Parts to Africa",
+    description:
+      "Request a wholesale spare parts export quote from CrestMAX. WhatsApp our sales team or fill the form — we respond with accurate pricing within 24–48 hours.",
+    url: "https://crestmax.in/contact",
+    type: "website",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://crestmax.in" },
+    { "@type": "ListItem", position: 2, name: "Request a Quote", item: "https://crestmax.in/contact" },
+  ],
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "How quickly do you respond to an enquiry?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We review every enquiry carefully and aim to respond within 24–48 business hours with accurate pricing and availability for your requested parts.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What information should I include in my enquiry?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Include your country, the vehicle models you need parts for (e.g. Bajaj Boxer, TVS HLX, Bajaj RE), specific part names if known, and estimated quantities. The more detail you provide, the faster we can quote.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can you source parts not listed in your catalogue?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Our listed catalogue covers our core range, but we source a far wider selection from India's manufacturing belt. Contact us with any part details and we will procure it.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What payment terms do you offer?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Payment terms are agreed per order. We typically work with advance payment or letter of credit for new wholesale relationships.",
+      },
+    },
+  ],
 };
 
 const contactSchema = {
@@ -21,6 +76,8 @@ const contactSchema = {
 export default function ContactPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }} />
 
       {/* Hero */}

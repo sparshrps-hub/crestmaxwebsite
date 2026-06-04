@@ -6,8 +6,63 @@ import SectionHeading from "@/components/SectionHeading";
 export const metadata: Metadata = {
   title: "Why Choose CrestMAX | Indian Parts vs Chinese Parts | Africa Export",
   description:
-    "CrestMAX delivers OEM-compatible Indian spare parts with full documentation, named director contacts, and long-term trade reliability. See why Indian parts outperform Chinese alternatives across African markets.",
+    "OEM-compatible Indian spare parts, full export documentation, reliable supply. Why African wholesale importers choose CrestMAX over Chinese alternatives for Bajaj, TVS and Hero vehicles.",
   alternates: { canonical: "https://crestmax.in/why-crestmax" },
+  openGraph: {
+    title: "Why Choose CrestMAX | Indian Parts vs Chinese Parts | Africa Export",
+    description:
+      "OEM-compatible Indian spare parts, full export documentation, reliable supply. Why African wholesale importers choose CrestMAX over Chinese alternatives.",
+    url: "https://crestmax.in/why-crestmax",
+    type: "website",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://crestmax.in" },
+    { "@type": "ListItem", position: 2, name: "Why CrestMAX", item: "https://crestmax.in/why-crestmax" },
+  ],
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Why are Indian spare parts better than Chinese parts for African vehicles?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Indian parts are manufactured specifically for Bajaj, TVS, and Hero models — the same bikes sold in Africa. They match OEM specifications and come with a traceable supply chain. Chinese generic parts often use approximate dimensions, leading to fitment problems and early wear.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What quality standards do CrestMAX parts meet?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Our parts are sourced exclusively from verified Indian manufacturers and checked against original equipment specifications before dispatch. We do not stock grey market or unverified parts.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do you provide export documentation?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Every CrestMAX shipment includes a commercial invoice, detailed packing list, and certificate of origin (COO). Full documentation for smooth customs clearance at all major African ports.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What shipping terms do you offer?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We offer FOB (Free On Board) from Mumbai where the buyer arranges freight, or CIF (Cost, Insurance, Freight) to any designated African port where CrestMAX arranges freight and insurance.",
+      },
+    },
+  ],
 };
 
 const pillars = [
@@ -72,6 +127,8 @@ const comparisonRows = [
 export default function WhyCrestmaxPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* Hero */}
       <section style={{ background: "var(--cm-navy-deep)", paddingTop: "140px", paddingBottom: "80px", textAlign: "center", borderBottom: "1px solid var(--cm-gold-border)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(135deg, transparent, transparent 60px, rgba(201,168,76,0.02) 60px, rgba(201,168,76,0.02) 61px)", pointerEvents: "none" }} />
@@ -161,9 +218,14 @@ export default function WhyCrestmaxPage() {
           <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "16px", color: "rgba(255,255,255,0.65)", lineHeight: "1.8", marginBottom: "36px" }}>
             We offer clear, structured arrangements for agents who bring us genuine wholesale buyers. Get in touch and let&apos;s discuss how we can work together.
           </p>
-          <Link href="/contact" style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "15px", letterSpacing: "3px", textTransform: "uppercase", background: "var(--cm-gold)", color: "var(--cm-navy-deep)", padding: "14px 40px", borderRadius: "2px", textDecoration: "none", display: "inline-block" }}>
-            Contact Us as a Trade Partner
-          </Link>
+          <div style={{ display: "flex", gap: "16px", justifyContent: "center", flexWrap: "wrap" }}>
+            <Link href="/trade-partner" style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "15px", letterSpacing: "3px", textTransform: "uppercase", background: "var(--cm-gold)", color: "var(--cm-navy-deep)", padding: "14px 40px", borderRadius: "2px", textDecoration: "none", display: "inline-block" }}>
+              Become a Trade Partner
+            </Link>
+            <Link href="/sales-agent" style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "15px", letterSpacing: "3px", textTransform: "uppercase", background: "transparent", color: "var(--cm-gold)", border: "1.5px solid var(--cm-gold)", padding: "14px 40px", borderRadius: "2px", textDecoration: "none", display: "inline-block" }}>
+              Become a Sales Agent
+            </Link>
+          </div>
         </div>
       </section>
 

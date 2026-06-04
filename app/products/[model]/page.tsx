@@ -103,23 +103,72 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { model } = await params;
   const m = metaMap[model];
   if (!m) return { title: "Spare Parts | CrestMAX" };
-  return { title: m.title, description: m.description, alternates: { canonical: m.canonical } };
+  return {
+    title: m.title,
+    description: m.description,
+    alternates: { canonical: m.canonical },
+    openGraph: {
+      title: m.title,
+      description: m.description,
+      url: m.canonical,
+      type: "website",
+    },
+  };
 }
+
+const categoryMap: Record<string, string> = {
+  "bajaj-boxer": "2-Wheeler Motorcycle Spare Parts",
+  "tvs-hlx": "2-Wheeler Motorcycle Spare Parts",
+  ct100: "2-Wheeler Motorcycle Spare Parts",
+  "bajaj-re": "3-Wheeler Auto Rickshaw Spare Parts",
+  "tvs-king": "3-Wheeler Auto Rickshaw Spare Parts",
+};
 
 function buildProductSchema(model: string, name: string, description: string) {
   return {
     "@context": "https://schema.org",
     "@type": "Product",
+    "@id": `https://crestmax.in/products/${model}#product`,
     name: `${name} — Wholesale Export from India`,
     description,
+    url: `https://crestmax.in/products/${model}`,
+    category: categoryMap[model] ?? "Spare Parts",
     brand: { "@type": "Brand", name: "CrestMAX" },
+    manufacturer: {
+      "@type": "Organization",
+      "@id": "https://crestmax.in/#organization",
+      name: "CrestMAX",
+      url: "https://crestmax.in",
+    },
     offers: {
       "@type": "Offer",
+      "@id": `https://crestmax.in/products/${model}#offer`,
       priceCurrency: "USD",
-      priceSpecification: { "@type": "PriceSpecification", description: "Wholesale FOB/CIF pricing. Contact for quote." },
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        description: "Wholesale FOB/CIF pricing. Contact for quote.",
+      },
       availability: "https://schema.org/InStock",
-      seller: { "@type": "Organization", name: "CrestMAX" },
+      url: `https://crestmax.in/products/${model}`,
+      seller: {
+        "@type": "Organization",
+        "@id": "https://crestmax.in/#organization",
+        name: "CrestMAX",
+      },
+      areaServed: { "@type": "Place", name: "Africa" },
     },
+  };
+}
+
+function buildBreadcrumbSchema(model: string, modelName: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://crestmax.in" },
+      { "@type": "ListItem", position: 2, name: "Products", item: "https://crestmax.in/products" },
+      { "@type": "ListItem", position: 3, name: modelName, item: `https://crestmax.in/products/${model}` },
+    ],
   };
 }
 
@@ -143,10 +192,12 @@ export default async function ModelPage({ params }: Props) {
   };
 
   const productSchema = buildProductSchema(model, vehicleModel.name, desc?.body.slice(0, 250) || "");
+  const breadcrumbSchema = buildBreadcrumbSchema(model, vehicleModel.name);
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Hero */}
       <section style={{ background: "var(--cm-navy-deep)", paddingTop: "140px", paddingBottom: "60px", borderBottom: "1px solid var(--cm-gold-border)", position: "relative", overflow: "hidden" }}>

@@ -8,8 +8,15 @@ import { markets } from "@/lib/markets";
 export const metadata: Metadata = {
   title: "CrestMAX | Indian 2-Wheeler & 3-Wheeler Spare Parts Exporter to Africa",
   description:
-    "CrestMAX, a venture by RPS Infrastructures — exporting Bajaj, TVS, Hero spare parts to Nigeria, Ghana, Kenya and 12+ African nations. FOB Mumbai or CIF any African port. B2B wholesale enquiries welcome.",
+    "CrestMAX exports Bajaj, TVS, Hero spare parts wholesale from Ludhiana, India to Nigeria, Ghana, Kenya and 12+ African nations. FOB Mumbai or CIF any port. B2B enquiries welcome.",
   alternates: { canonical: "https://crestmax.in/" },
+  openGraph: {
+    title: "CrestMAX | Indian 2-Wheeler & 3-Wheeler Spare Parts Exporter to Africa",
+    description:
+      "CrestMAX exports Bajaj, TVS, Hero spare parts wholesale from Ludhiana, India to Nigeria, Ghana, Kenya and 12+ African nations. FOB Mumbai or CIF any port.",
+    url: "https://crestmax.in/",
+    type: "website",
+  },
 };
 
 const breadcrumbSchema = {
@@ -17,6 +24,45 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://crestmax.in" },
+  ],
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Do you export spare parts directly to Africa?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. CrestMAX ships wholesale spare parts FOB from Mumbai or CIF to any African port. We serve importers and distributors in Nigeria, Ghana, Kenya, Tanzania, Uganda, Ethiopia, and 12+ other nations.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is your minimum order quantity?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "CrestMAX is designed for wholesale buyers — importers, distributors, and trading companies. There is no fixed minimum, but we focus on B2B volume orders, not retail.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Which vehicles do you supply spare parts for?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "CrestMAX supplies OEM-compatible parts for Bajaj Boxer, TVS HLX, CT100, Bajaj RE (Keke Napep), and TVS King — the most widely used 2-wheeler and 3-wheeler vehicles across Africa.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What shipping terms do you offer?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We offer FOB (Free On Board) from Mumbai where you arrange freight, or CIF (Cost, Insurance, Freight) to your designated African port where we arrange freight and insurance.",
+      },
+    },
   ],
 };
 
@@ -35,10 +81,8 @@ export default function HomePage() {
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
       <section
@@ -61,7 +105,6 @@ export default function HomePage() {
             B2B Export · India to Africa
           </p>
 
-          {/* H1 — primary keyword */}
           <h1 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "clamp(32px, 7vw, 72px)", letterSpacing: "3px", lineHeight: "1.0", color: "#FFFFFF", textTransform: "uppercase", margin: "0 0 28px 0" }}>
             Indian 2-Wheeler &amp; 3-Wheeler<br />
             <span style={{ color: "var(--cm-gold)" }}>Spare Parts Exporter</span><br />
@@ -100,7 +143,7 @@ export default function HomePage() {
       <section style={{ background: "var(--cm-navy-mid)", borderBottom: "1px solid var(--cm-gold-border)" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "40px 24px", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: "32px", textAlign: "center" }}>
           {[
-            { stat: "58+", label: "Spare Part Categories" },
+            { stat: "76+", label: "Spare Parts in Catalogue" },
             { stat: "12+", label: "African Nations Served" },
             { stat: "FOB/CIF", label: "Mumbai or Any African Port" },
             { stat: "B2B", label: "Wholesale Only" },
@@ -125,19 +168,19 @@ export default function HomePage() {
               <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.5)", marginBottom: "24px" }}>For Boxer, HLX, CT100 &amp; Compatible Models</p>
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 20px", display: "flex", flexDirection: "column", gap: "6px" }}>
                 {[
-                  ["View Bajaj Boxer Parts →", "/products/bajaj-boxer"],
-                  ["View TVS HLX Parts →", "/products/tvs-hlx"],
-                  ["View CT100 Parts →", "/products/ct100"],
+                  ["Bajaj Boxer Spare Parts", "/products/bajaj-boxer"],
+                  ["TVS HLX Spare Parts", "/products/tvs-hlx"],
+                  ["CT100 Spare Parts", "/products/ct100"],
                 ].map(([label, href]) => (
                   <li key={href}>
                     <Link href={href} style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.7)", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}>
-                      <span style={{ color: "var(--cm-gold)", fontWeight: 700 }}>—</span> {label}
+                      <span style={{ color: "var(--cm-gold)", fontWeight: 700 }}>—</span> {label} →
                     </Link>
                   </li>
                 ))}
               </ul>
               <Link href="/products" style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 600, fontSize: "13px", letterSpacing: "1px", color: "var(--cm-gold)", textDecoration: "none", textTransform: "uppercase" }}>
-                View Full 2-Wheeler Range →
+                View Full 2-Wheeler Catalogue →
               </Link>
             </div>
 
@@ -148,18 +191,18 @@ export default function HomePage() {
               <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.5)", marginBottom: "24px" }}>For Bajaj RE, Tuk Tuk, Keke Napep, TVS King</p>
               <ul style={{ listStyle: "none", padding: 0, margin: "0 0 20px", display: "flex", flexDirection: "column", gap: "6px" }}>
                 {[
-                  ["View Bajaj RE / Keke Napep Parts →", "/products/bajaj-re"],
-                  ["View TVS King Parts →", "/products/tvs-king"],
+                  ["Bajaj RE / Keke Napep Parts", "/products/bajaj-re"],
+                  ["TVS King Spare Parts", "/products/tvs-king"],
                 ].map(([label, href]) => (
                   <li key={href}>
                     <Link href={href} style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.7)", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}>
-                      <span style={{ color: "var(--cm-gold)", fontWeight: 700 }}>—</span> {label}
+                      <span style={{ color: "var(--cm-gold)", fontWeight: 700 }}>—</span> {label} →
                     </Link>
                   </li>
                 ))}
               </ul>
               <Link href="/products" style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 600, fontSize: "13px", letterSpacing: "1px", color: "var(--cm-gold)", textDecoration: "none", textTransform: "uppercase" }}>
-                View Full 3-Wheeler Range →
+                View Full 3-Wheeler Catalogue →
               </Link>
             </div>
           </div>
@@ -201,13 +244,13 @@ export default function HomePage() {
           </div>
           <div style={{ textAlign: "center", marginTop: "40px" }}>
             <Link href="/why-crestmax" style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 600, fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase", color: "var(--cm-gold)", textDecoration: "none", border: "1px solid var(--cm-gold-border)", padding: "10px 28px", borderRadius: "2px", display: "inline-block" }}>
-              See All Reasons →
+              See Why African Importers Choose Us →
             </Link>
           </div>
         </div>
       </section>
 
-      {/* India vs China Section */}
+      {/* India vs China */}
       <section style={{ padding: "96px 24px", background: "var(--cm-navy)" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto" }}>
           <SectionHeading
@@ -215,8 +258,6 @@ export default function HomePage() {
             title="Why Indian Spare Parts Outperform Chinese Alternatives in Africa"
             subtitle="The difference shows up on the road. Here's what African importers and mechanics have learned."
           />
-
-          {/* Comparison table */}
           <div style={{ overflowX: "auto", marginBottom: "40px" }}>
             <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: "Nunito Sans, sans-serif", fontSize: "14px" }}>
               <thead>
@@ -237,8 +278,6 @@ export default function HomePage() {
               </tbody>
             </table>
           </div>
-
-          {/* Callout */}
           <div style={{ background: "var(--cm-navy-mid)", border: "1px solid var(--cm-gold-border)", borderLeft: "4px solid var(--cm-gold)", borderRadius: "2px", padding: "28px 32px" }}>
             <p style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 600, fontSize: "20px", color: "#FFFFFF", lineHeight: "1.5", margin: 0, fontStyle: "italic" }}>
               &ldquo;The mechanic in Lagos, the Keke owner in Accra, the fleet operator in Nairobi — they know the difference. Indian parts keep vehicles running longer. That&apos;s why the market keeps coming back to India.&rdquo;
@@ -255,11 +294,8 @@ export default function HomePage() {
             <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "16px", color: "rgba(255,255,255,0.65)", lineHeight: "1.8", marginBottom: "20px" }}>
               We are not interested in one-time transactions. CrestMAX is built for the kind of trade relationship where you know exactly who to call, what to expect, and that your order will arrive as committed — every single time.
             </p>
-            <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "16px", color: "rgba(255,255,255,0.65)", lineHeight: "1.8", marginBottom: "20px" }}>
-              Our partners come back to us not because we are the cheapest, but because we are the most consistent. In export trade, reliability is worth more than a small discount on a single shipment.
-            </p>
             <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "16px", color: "rgba(255,255,255,0.65)", lineHeight: "1.8" }}>
-              We work with a small, select group of importers and distributors in each market — which means we know your business, your vehicles, and your customers. When you grow, we grow with you.
+              Our partners come back to us not because we are the cheapest, but because we are the most consistent. In export trade, reliability is worth more than a small discount on a single shipment.
             </p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "24px" }}>
@@ -287,7 +323,7 @@ export default function HomePage() {
           </div>
           <div style={{ textAlign: "center" }}>
             <Link href="/markets" style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 600, fontSize: "13px", letterSpacing: "2px", textTransform: "uppercase", color: "var(--cm-gold)", textDecoration: "none", border: "1px solid var(--cm-gold-border)", padding: "10px 28px", borderRadius: "2px", display: "inline-block" }}>
-              See All Markets →
+              See All African Markets We Serve →
             </Link>
           </div>
         </div>
@@ -318,10 +354,10 @@ export default function HomePage() {
             CrestMAX operates from <Link href="/about" style={{ color: "var(--cm-gold-deep)", textDecoration: "underline" }}>Ludhiana, Punjab</Link> — the heart of India&apos;s auto parts manufacturing industry. We source 2-wheeler and 3-wheeler spare parts directly from verified Indian manufacturers and export them FOB from Mumbai or CIF to any African port your business requires.
           </p>
           <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "16px", color: "rgba(13,27,42,0.7)", lineHeight: "1.8", marginBottom: "20px" }}>
-            Our catalogue covers the most-used vehicles across West and East Africa: <Link href="/products/bajaj-boxer" style={{ color: "var(--cm-gold-deep)" }}>Bajaj Boxer</Link>, <Link href="/products/tvs-hlx" style={{ color: "var(--cm-gold-deep)" }}>TVS HLX</Link>, <Link href="/products/ct100" style={{ color: "var(--cm-gold-deep)" }}>CT100</Link> motorcycles, and <Link href="/products/bajaj-re" style={{ color: "var(--cm-gold-deep)" }}>Bajaj RE / Keke Napep</Link>, <Link href="/products/tvs-king" style={{ color: "var(--cm-gold-deep)" }}>TVS King</Link> three-wheelers. Whether you are a wholesale importer in Lagos, a distributor in Nairobi, or a trader in Accra — we supply the parts your market needs, with the documentation and reliability your business depends on.
+            Our catalogue covers the most-used vehicles across West and East Africa: <Link href="/products/bajaj-boxer" style={{ color: "var(--cm-gold-deep)" }}>Bajaj Boxer</Link>, <Link href="/products/tvs-hlx" style={{ color: "var(--cm-gold-deep)" }}>TVS HLX</Link>, <Link href="/products/ct100" style={{ color: "var(--cm-gold-deep)" }}>CT100</Link> motorcycles, and <Link href="/products/bajaj-re" style={{ color: "var(--cm-gold-deep)" }}>Bajaj RE / Keke Napep</Link>, <Link href="/products/tvs-king" style={{ color: "var(--cm-gold-deep)" }}>TVS King</Link> three-wheelers. Whether you are a wholesale importer in Lagos, a distributor in Nairobi, or a trader in Accra — we supply the parts your market needs.
           </p>
           <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "16px", color: "rgba(13,27,42,0.7)", lineHeight: "1.8" }}>
-            With direct sourcing from India&apos;s spare parts belt and a supply chain built specifically for the African aftermarket, CrestMAX is your trusted long-term export partner. <Link href="/contact" style={{ color: "var(--cm-gold-deep)", fontWeight: 600 }}>Contact us</Link> today.
+            With direct sourcing from India&apos;s spare parts belt and a supply chain built specifically for the African aftermarket, CrestMAX is your trusted long-term export partner. <Link href="/contact" style={{ color: "var(--cm-gold-deep)", fontWeight: 600 }}>Request a quote today</Link> or learn about <Link href="/trade-partner" style={{ color: "var(--cm-gold-deep)" }}>becoming a Trade Partner</Link>.
           </p>
         </div>
       </section>

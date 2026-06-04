@@ -5,8 +5,55 @@ import TradePartnerForm from "@/components/TradePartnerForm";
 export const metadata: Metadata = {
   title: "Become a Trade Partner | CrestMAX — Indian Spare Parts Export to Africa",
   description:
-    "Become a CrestMAX Trade Partner. Importers, distributors and wholesalers in Africa — apply to source Indian 2-wheeler and 3-wheeler spare parts at wholesale prices direct from India.",
+    "Importers, distributors and wholesalers in Africa — apply to become a CrestMAX Trade Partner. Source Indian 2-wheeler and 3-wheeler spare parts at wholesale prices, FOB or CIF.",
   alternates: { canonical: "https://crestmax.in/trade-partner" },
+  openGraph: {
+    title: "Become a Trade Partner | CrestMAX — Indian Spare Parts Export to Africa",
+    description:
+      "Importers, distributors and wholesalers in Africa — apply to become a CrestMAX Trade Partner. Source Indian spare parts at wholesale prices, FOB or CIF.",
+    url: "https://crestmax.in/trade-partner",
+    type: "website",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://crestmax.in" },
+    { "@type": "ListItem", position: 2, name: "Become a Trade Partner", item: "https://crestmax.in/trade-partner" },
+  ],
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is a CrestMAX Trade Partner?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A Trade Partner is a wholesale importer, distributor, or trading company that buys spare parts directly from CrestMAX at wholesale prices for resale in their African market.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is there a minimum order to become a Trade Partner?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We focus on wholesale volume and there is no fixed minimum. We evaluate each application based on business scale, market reach, and growth potential.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long does it take to process a Trade Partner application?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We review all applications within 2–3 business days and will contact you by WhatsApp or email to discuss the next steps.",
+      },
+    },
+  ],
 };
 
 const benefits = [
@@ -19,6 +66,8 @@ const benefits = [
 export default function TradePartnerPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* Hero */}
       <section style={{ background: "var(--cm-navy-deep)", paddingTop: "130px", paddingBottom: "60px", textAlign: "center", borderBottom: "1px solid var(--cm-gold-border)" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", padding: "0 24px" }}>

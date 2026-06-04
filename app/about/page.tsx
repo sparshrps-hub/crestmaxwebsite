@@ -6,13 +6,30 @@ import SectionHeading from "@/components/SectionHeading";
 export const metadata: Metadata = {
   title: "About CrestMAX | Indian Spare Parts Exporter for African Markets",
   description:
-    "CrestMAX, a venture by RPS Infrastructures — bridging India's spare parts manufacturing with Africa's growing 2-wheeler and 3-wheeler market. Based in Ludhiana, Punjab.",
+    "CrestMAX exports Bajaj, TVS, Hero spare parts from Ludhiana, India to wholesale importers across Africa. B2B 2-wheeler and 3-wheeler parts, FOB Mumbai or CIF any African port.",
   alternates: { canonical: "https://crestmax.in/about" },
+  openGraph: {
+    title: "About CrestMAX | Indian Spare Parts Exporter for African Markets",
+    description:
+      "CrestMAX exports Bajaj, TVS, Hero spare parts from Ludhiana, India to wholesale importers across Africa. B2B 2-wheeler and 3-wheeler parts, FOB Mumbai or CIF any African port.",
+    url: "https://crestmax.in/about",
+    type: "website",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://crestmax.in" },
+    { "@type": "ListItem", position: 2, name: "About CrestMAX", item: "https://crestmax.in/about" },
+  ],
 };
 
 export default function AboutPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <section style={{ background: "var(--cm-navy-deep)", paddingTop: "140px", paddingBottom: "80px", textAlign: "center", borderBottom: "1px solid var(--cm-gold-border)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(135deg, transparent, transparent 60px, rgba(201,168,76,0.02) 60px, rgba(201,168,76,0.02) 61px)", pointerEvents: "none" }} />

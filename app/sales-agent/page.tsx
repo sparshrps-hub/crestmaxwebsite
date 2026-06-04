@@ -5,8 +5,55 @@ import SalesAgentForm from "@/components/SalesAgentForm";
 export const metadata: Metadata = {
   title: "Become a Sales Agent | CrestMAX — Indian Spare Parts Export to Africa",
   description:
-    "Represent CrestMAX as a Sales Agent across Africa. We work with agents who have strong buyer networks among importers, distributors and fleet operators. Apply now.",
+    "Represent CrestMAX across Africa and earn commission on every wholesale order. We work with sales agents who have strong buyer networks among importers, distributors and fleet operators.",
   alternates: { canonical: "https://crestmax.in/sales-agent" },
+  openGraph: {
+    title: "Become a Sales Agent | CrestMAX — Indian Spare Parts Export to Africa",
+    description:
+      "Represent CrestMAX across Africa and earn commission on every wholesale order. We work with agents who have strong buyer networks in African markets.",
+    url: "https://crestmax.in/sales-agent",
+    type: "website",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://crestmax.in" },
+    { "@type": "ListItem", position: 2, name: "Become a Sales Agent", item: "https://crestmax.in/sales-agent" },
+  ],
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What does a CrestMAX Sales Agent do?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A Sales Agent identifies wholesale buyers — importers, distributors, fleet operators — in their territory and introduces them to CrestMAX. Agents earn a commission on every successful wholesale order they bring in.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do Sales Agents need experience in spare parts?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Experience in the automotive or spare parts industry is a strong advantage, but we primarily look for people with strong buyer networks among importers and distributors in African markets.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is the Sales Agent role paid a salary?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sales Agent roles are commission-based. You earn on every wholesale order you successfully introduce to CrestMAX. There is no fixed salary.",
+      },
+    },
+  ],
 };
 
 const highlights = [
@@ -19,6 +66,8 @@ const highlights = [
 export default function SalesAgentPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* Hero */}
       <section style={{ background: "var(--cm-navy-deep)", paddingTop: "130px", paddingBottom: "60px", textAlign: "center", borderBottom: "1px solid var(--cm-gold-border)" }}>
         <div style={{ maxWidth: "720px", margin: "0 auto", padding: "0 24px" }}>

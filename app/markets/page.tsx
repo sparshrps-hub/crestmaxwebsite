@@ -5,15 +5,32 @@ import MarketCard from "@/components/MarketCard";
 import { markets } from "@/lib/markets";
 
 export const metadata: Metadata = {
-  title: "Spare Parts Exporter to Nigeria, Ghana, Kenya, Tanzania | CrestMAX",
+  title: "African Markets We Serve — Spare Parts Export from India | CrestMAX",
   description:
-    "CrestMAX exports 2-wheeler and 3-wheeler spare parts to 12+ African nations including Nigeria, Ghana, Kenya, Tanzania, Uganda and Ethiopia. FOB Mumbai or CIF any African port.",
+    "CrestMAX supplies wholesale spare parts to Nigeria, Ghana, Kenya, Tanzania, Uganda, Ethiopia and 12+ African nations. FOB Mumbai or CIF to any African port.",
   alternates: { canonical: "https://crestmax.in/markets" },
+  openGraph: {
+    title: "African Markets We Serve — Spare Parts Export from India | CrestMAX",
+    description:
+      "CrestMAX supplies wholesale spare parts to Nigeria, Ghana, Kenya, Tanzania, Uganda, Ethiopia and 12+ African nations. FOB Mumbai or CIF to any African port.",
+    url: "https://crestmax.in/markets",
+    type: "website",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://crestmax.in" },
+    { "@type": "ListItem", position: 2, name: "Markets", item: "https://crestmax.in/markets" },
+  ],
 };
 
 export default function MarketsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Hero */}
       <section style={{ background: "var(--cm-navy-deep)", paddingTop: "140px", paddingBottom: "80px", textAlign: "center", borderBottom: "1px solid var(--cm-gold-border)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(135deg, transparent, transparent 60px, rgba(201,168,76,0.02) 60px, rgba(201,168,76,0.02) 61px)", pointerEvents: "none" }} />

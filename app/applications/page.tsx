@@ -3,10 +3,26 @@ import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "Applications & Compatibility | 2-Wheeler & 3-Wheeler Spare Parts | CrestMAX",
+  title: "Vehicle Applications & Compatibility | 2-Wheeler & 3-Wheeler Parts | CrestMAX",
   description:
-    "Spare parts for Bajaj Boxer, TVS HLX, CT100, Bajaj RE/Keke Napep and TVS King — OEM-compatible Indian parts built for Africa's most popular vehicles.",
+    "Spare parts for Bajaj Boxer, TVS HLX, CT100, Bajaj RE/Keke Napep and TVS King — OEM-compatible Indian parts for Africa's most popular 2-wheeler and 3-wheeler vehicles.",
   alternates: { canonical: "https://crestmax.in/applications" },
+  openGraph: {
+    title: "Vehicle Applications & Compatibility | 2-Wheeler & 3-Wheeler Parts | CrestMAX",
+    description:
+      "OEM-compatible spare parts for Bajaj Boxer, TVS HLX, CT100, Bajaj RE/Keke Napep and TVS King — the most popular vehicles across Africa.",
+    url: "https://crestmax.in/applications",
+    type: "website",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://crestmax.in" },
+    { "@type": "ListItem", position: 2, name: "Applications", item: "https://crestmax.in/applications" },
+  ],
 };
 
 const twoWheelers = [
@@ -42,6 +58,7 @@ function VehicleCard({ slug, model, brand, prevalence, categories }: { slug: str
 export default function ApplicationsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section style={{ background: "var(--cm-navy-deep)", paddingTop: "140px", paddingBottom: "64px", textAlign: "center", borderBottom: "1px solid var(--cm-gold-border)" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 24px" }}>
           <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "5px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "20px" }}>Compatibility Guide</p>
