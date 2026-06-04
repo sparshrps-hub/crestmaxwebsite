@@ -5,16 +5,16 @@ import { MessageCircle } from "lucide-react";
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/91XXXXXXXXXX"
+      href="https://wa.me/919855739773"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat on WhatsApp"
+      aria-label="Chat with CrestMAX on WhatsApp"
       className="whatsapp-pulse"
       style={{
         position: "fixed",
         bottom: "28px",
         right: "28px",
-        zIndex: 999,
+        zIndex: 997,
         width: "56px",
         height: "56px",
         borderRadius: "50%",
