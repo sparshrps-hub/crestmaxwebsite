@@ -12,41 +12,39 @@ export default function Logo({ size = "sm" }: LogoProps) {
       style={{ display: "inline-flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1 }}
       aria-label="CrestMAX — Indian 2-Wheeler and 3-Wheeler Spare Parts Exporter to Africa"
     >
-      {/* CrestMAX wordmark */}
       <div style={{ display: "flex", alignItems: "baseline" }}>
         <span
           style={{
             fontFamily: "Rajdhani, sans-serif",
-            fontWeight: 400,
-            fontSize: isLg ? "34px" : "24px",
-            letterSpacing: "1px",
+            fontWeight: 700,
+            fontSize: isLg ? "36px" : "26px",
+            letterSpacing: "0.5px",
             color: "#FFFFFF",
           }}
         >
-          Crest
+          CREST
         </span>
         <span
           style={{
             fontFamily: "Rajdhani, sans-serif",
             fontWeight: 700,
-            fontSize: isLg ? "34px" : "24px",
-            letterSpacing: "1px",
+            fontSize: isLg ? "36px" : "26px",
+            letterSpacing: "0.5px",
             color: "#C9A84C",
           }}
         >
           MAX
         </span>
       </div>
-      {/* Venture tagline — increased size for legibility */}
       <span
         style={{
           fontFamily: "Nunito Sans, sans-serif",
           fontWeight: 400,
-          fontSize: isLg ? "11px" : "9px",
+          fontSize: isLg ? "10px" : "8px",
           letterSpacing: "1.5px",
           textTransform: "uppercase",
-          color: "rgba(201,168,76,0.85)",
-          marginTop: isLg ? "3px" : "2px",
+          color: "rgba(201,168,76,0.75)",
+          marginTop: "2px",
           whiteSpace: "nowrap",
         }}
       >

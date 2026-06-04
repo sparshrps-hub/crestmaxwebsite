@@ -98,9 +98,8 @@ export default function EnquiryForm() {
         <label style={labelStyle}>Type of Enquiry *</label>
         <select {...register("enquiryType", { required: "Please select enquiry type" })} style={{ ...inputStyle, appearance: "none" }}>
           <option value="">Select enquiry type</option>
-          <option value="catalogue-parts">I need parts from your catalogue</option>
-          <option value="sourcing-request">I need a part not listed on your website (Sourcing Request)</option>
-          <option value="trade-partner">I am a sales agent / trade partner</option>
+          <option value="catalogue-parts">Parts from your catalogue</option>
+          <option value="sourcing-request">Custom sourcing request (part not listed)</option>
           <option value="general">General enquiry</option>
         </select>
         {errors.enquiryType && <p style={errorStyle}>{errors.enquiryType.message}</p>}
