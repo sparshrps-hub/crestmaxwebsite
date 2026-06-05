@@ -143,7 +143,7 @@ export default function AboutPage() {
             <div style={{ background: "var(--cm-navy-mid)", borderLeft: "4px solid var(--cm-gold)", borderRadius: "2px", padding: "40px 36px" }}>
               <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "3px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "16px" }}>Mission</p>
               <p style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 600, fontSize: "22px", color: "#FFFFFF", lineHeight: "1.4", margin: 0 }}>
-                &ldquo;To deliver genuine-quality parts with reliable export logistics, helping our partners grow their businesses across Africa.&rdquo;
+                &ldquo;To deliver high-quality aftermarket parts with reliable export logistics, helping our partners grow their businesses across Africa.&rdquo;
               </p>
             </div>
           </div>

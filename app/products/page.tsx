@@ -4,12 +4,12 @@ import ProductsClientUI from "@/components/ProductsClientUI";
 export const metadata: Metadata = {
   title: "2-Wheeler & 3-Wheeler Spare Parts — Wholesale Export India to Africa | CrestMAX",
   description:
-    "Browse CrestMAX's wholesale spare parts catalogue for Bajaj, TVS, Hero motorcycles and auto rickshaws. OEM-compatible parts exported from India to Nigeria, Ghana, Kenya and 12+ African nations.",
+    "Browse CrestMAX's wholesale spare parts catalogue for Bajaj, TVS, Hero motorcycles and auto rickshaws. aftermarket-compatible parts exported from India to Nigeria, Ghana, Kenya and 12+ African nations.",
   alternates: { canonical: "https://crestmax.in/products" },
   openGraph: {
     title: "2-Wheeler & 3-Wheeler Spare Parts — Wholesale Export India to Africa | CrestMAX",
     description:
-      "Browse CrestMAX's wholesale spare parts catalogue for Bajaj, TVS, Hero motorcycles and auto rickshaws. OEM-compatible parts exported from India to Nigeria, Ghana, Kenya and 12+ African nations.",
+      "Browse CrestMAX's wholesale spare parts catalogue for Bajaj, TVS, Hero motorcycles and auto rickshaws. aftermarket-compatible parts exported from India to Nigeria, Ghana, Kenya and 12+ African nations.",
     url: "https://crestmax.in/products",
     type: "website",
   },

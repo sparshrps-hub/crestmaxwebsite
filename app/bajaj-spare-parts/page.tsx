@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Bajaj Spare Parts Exporter from India to Africa — Wholesale Supplier | CrestMAX",
-  description: "CrestMAX exports genuine Bajaj 2-wheeler spare parts wholesale from Ludhiana, India to Nigeria, Ghana, Kenya and Africa. Bajaj Boxer, Bajaj Pulsar, CT100 parts. FOB Mumbai or CIF.",
+  description: "CrestMAX exports high-quality Bajaj-compatible spare parts wholesale from Ludhiana, India to Nigeria, Ghana, Kenya and Africa. Bajaj Boxer, Bajaj Pulsar, CT100 parts. FOB Mumbai or CIF.",
   alternates: { canonical: "https://crestmax.in/bajaj-spare-parts" },
   openGraph: {
     title: "Bajaj Spare Parts Exporter from India to Africa | CrestMAX",
@@ -28,7 +28,7 @@ const faqSchema = {
   mainEntity: [
     { "@type": "Question", name: "Does CrestMAX export Bajaj spare parts to Africa?", acceptedAnswer: { "@type": "Answer", text: "Yes — CrestMAX exports wholesale Bajaj 2-wheeler spare parts from Ludhiana, India to Nigeria, Ghana, Kenya, Tanzania, Uganda and 12+ African nations. We ship FOB Mumbai or CIF to your port." } },
     { "@type": "Question", name: "Which Bajaj 2-wheeler models do you supply parts for?", acceptedAnswer: { "@type": "Answer", text: "We supply parts for Bajaj Boxer BM100/BM150, Bajaj Pulsar 150/180/200, Bajaj CT100, Bajaj Platina, and Bajaj Discover. Our strongest stock is for Bajaj Boxer and CT100 — the most widely used Bajaj motorcycles across Africa." } },
-    { "@type": "Question", name: "Are your Bajaj spare parts genuine OEM quality?", acceptedAnswer: { "@type": "Answer", text: "Yes — all parts are sourced from OEM-approved manufacturers in Ludhiana, India's spare parts manufacturing capital. These are the same suppliers that provide components to Bajaj's authorised service network. We do not stock Chinese generic copies." } },
+    { "@type": "Question", name: "Are your Bajaj spare parts high quality?", acceptedAnswer: { "@type": "Answer", text: "Yes — all parts are sourced from specialist aftermarket manufacturers in Ludhiana, India's spare parts manufacturing capital. These manufacturers have 20–35 years of experience producing parts compatible with Bajaj motorcycles. They are not Chinese copies — they are quality Indian aftermarket parts made by experienced specialists." } },
     { "@type": "Question", name: "What is the minimum order for Bajaj spare parts?", acceptedAnswer: { "@type": "Answer", text: "We work with wholesale buyers. Minimum is typically one LCL shipment (1–3 CBM) for mixed Bajaj parts, or one 20-foot container for single-model bulk orders. Contact us with your parts list for pricing." } },
   ],
 };
@@ -64,7 +64,7 @@ export default function BajajSparePartsPage() {
             <span style={{ color: "var(--cm-gold)" }}>Wholesale Exporter from India to Africa</span>
           </h1>
           <p style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 300, fontSize: "16px", color: "rgba(255,255,255,0.6)", lineHeight: "1.8", marginBottom: "32px" }}>
-            CrestMAX exports genuine Bajaj 2-wheeler spare parts wholesale from Ludhiana, India — the heart of India's spare parts manufacturing belt — to importers, distributors and trading companies across Africa. Bajaj Boxer, CT100, Pulsar, and Platina parts in stock, shipped FOB Mumbai or CIF to any African port.
+            CrestMAX exports high-quality Bajaj-compatible spare parts wholesale from Ludhiana, India — the heart of India's spare parts manufacturing belt — to importers, distributors and trading companies across Africa. Bajaj Boxer, CT100, Pulsar, and Platina parts in stock, shipped FOB Mumbai or CIF to any African port.
           </p>
           <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <Link href="/contact" style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "14px", letterSpacing: "3px", textTransform: "uppercase", background: "var(--cm-gold)", color: "var(--cm-navy-deep)", padding: "14px 36px", borderRadius: "2px", textDecoration: "none" }}>
@@ -155,13 +155,13 @@ export default function BajajSparePartsPage() {
             <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "10px", letterSpacing: "4px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "14px" }}>Our Sourcing</p>
             <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "28px", letterSpacing: "2px", color: "#FFFFFF", textTransform: "uppercase", marginBottom: "16px" }}>Why Ludhiana-Sourced Bajaj Parts?</h2>
             <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "rgba(255,255,255,0.65)", lineHeight: "1.8", marginBottom: "16px" }}>
-              Ludhiana, Punjab is India's spare parts manufacturing capital — home to over 5,000 auto parts manufacturers, many of whom supply directly to Bajaj Auto's OEM assembly lines and authorised service network. CrestMAX sources exclusively from these verified Ludhiana manufacturers.
+              Ludhiana, Punjab is India's spare parts manufacturing capital — home to over 5,000 auto parts manufacturers, with decades of experience producing aftermarket parts compatible with Bajaj, TVS, and Hero motorcycles. CrestMAX sources exclusively from these verified Ludhiana manufacturers.
             </p>
             <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "rgba(255,255,255,0.65)", lineHeight: "1.8", marginBottom: "20px" }}>
-              Every Bajaj part we export is manufactured to original equipment specifications — correct dimensions, metallurgical grade, and tolerance. This is not the case with Chinese-manufactured Bajaj copies, which use approximate dimensions and inferior materials, leading to early wear and fitment failures that African mechanics and operators recognise immediately.
+              Every part we export is produced by manufacturers who have made Bajaj-compatible parts for 20–35 years — correct dimensions, proper metallurgical grades, and proven tooling. This is not the case with Chinese-manufactured Bajaj copies, which use approximate dimensions and inferior materials, leading to early wear and fitment failures that African mechanics and operators recognise immediately.
             </p>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" }}>
-              {["OEM-grade quality", "Verified Ludhiana suppliers", "FOB & CIF terms", "Full export docs"].map((f) => (
+              {["high-quality aftermarket", "Verified Ludhiana suppliers", "FOB & CIF terms", "Full export docs"].map((f) => (
                 <div key={f} style={{ background: "var(--cm-navy-mid)", border: "1px solid var(--cm-gold-border)", borderRadius: "2px", padding: "14px 16px", fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "rgba(255,255,255,0.7)" }}>
                   <span style={{ color: "var(--cm-gold)", marginRight: "8px" }}>✓</span>{f}
                 </div>

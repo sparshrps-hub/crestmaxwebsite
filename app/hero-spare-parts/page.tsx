@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Hero Spare Parts Exporter from India to Africa — Wholesale Supplier | CrestMAX",
-  description: "CrestMAX exports genuine Hero motorcycle spare parts wholesale from Ludhiana, India to Africa. Hero HF Deluxe, CT100, Splendor, Passion parts. FOB Mumbai or CIF.",
+  description: "CrestMAX exports high-quality Hero-compatible spare parts wholesale from Ludhiana, India to Africa. Hero HF Deluxe, CT100, Splendor, Passion parts. FOB Mumbai or CIF.",
   alternates: { canonical: "https://crestmax.in/hero-spare-parts" },
   openGraph: {
     title: "Hero Spare Parts Exporter from India to Africa | CrestMAX",
@@ -28,7 +28,7 @@ const faqSchema = {
   mainEntity: [
     { "@type": "Question", name: "Does CrestMAX export Hero motorcycle spare parts to Africa?", acceptedAnswer: { "@type": "Answer", text: "Yes — CrestMAX exports wholesale Hero motorcycle spare parts from Ludhiana, India to Nigeria, Ghana, Kenya, Ethiopia and across Africa. Hero MotoCorp is the world's largest motorcycle manufacturer, and its CT100, HF Deluxe, and Splendor models are widely used across Africa." } },
     { "@type": "Question", name: "Which Hero models do you supply parts for?", acceptedAnswer: { "@type": "Answer", text: "Our primary Hero stock covers CT100 (the CT100 is one of the most popular 100cc motorcycles in Africa), Hero HF Deluxe, Hero Splendor+, and Hero Passion Pro. The CT100 is especially strong in West Africa." } },
-    { "@type": "Question", name: "Are your Hero spare parts genuine OEM quality?", acceptedAnswer: { "@type": "Answer", text: "Yes. Hero MotoCorp sources components from Ludhiana and nearby Punjab manufacturers — the same region where CrestMAX operates. Our Hero parts are sourced from OEM-tier manufacturers who supply Hero's own service network." } },
+    { "@type": "Question", name: "Are your Hero spare parts genuine OEM quality?", acceptedAnswer: { "@type": "Answer", text: "Yes. Hero MotoCorp sources components from Ludhiana and nearby Punjab manufacturers — the same region where CrestMAX operates. Our Hero parts are sourced from specialist aftermarket manufacturers who supply Hero's own service network." } },
     { "@type": "Question", name: "What is the minimum order for Hero spare parts?", acceptedAnswer: { "@type": "Answer", text: "We work with wholesale buyers — minimum is typically one LCL shipment. Contact us with your parts list for pricing and availability." } },
   ],
 };
@@ -75,7 +75,7 @@ export default function HeroSparePartsPage() {
               Hero MotoCorp sells over 5 million motorcycles annually and exports to 40+ countries, including Nigeria, Ethiopia, Kenya, Tanzania, Bangladesh and Sri Lanka. Its 100cc and 125cc models — particularly the CT100 and HF Deluxe — are positioned as affordable, fuel-efficient, low-maintenance motorcycles ideal for Africa's long-distance rural routes and urban delivery work.
             </p>
             <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "rgba(255,255,255,0.65)", lineHeight: "1.8" }}>
-              Because Hero manufactures components in Ludhiana and its surrounding Punjab belt, CrestMAX can source Hero parts directly from the same supply chain — ensuring OEM-grade quality with no added middleman margin. This is the supply chain advantage that Chinese alternative parts simply cannot replicate.
+              Ludhiana is where Hero's supply base is concentrated — and it is where CrestMAX operates. This means we source Hero-compatible aftermarket parts from manufacturers who have been making these specific parts for decades, with no middleman margin added. This depth of experience is what Chinese copycat manufacturers simply cannot match.
             </p>
           </div>
           <div>

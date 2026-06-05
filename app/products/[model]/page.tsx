@@ -53,7 +53,7 @@ const descriptionMap: Record<string, { heading: string; body: string }> = {
     heading: "About Bajaj Boxer Spare Parts — Export from India",
     body: `The Bajaj Boxer is one of the most widely used motorcycles across West and East Africa, particularly in Nigeria, Ghana, and Uganda. As a wholesale spare parts exporter from India, CrestMAX supplies a complete range of Bajaj Boxer aftermarket parts — engine components, clutch assemblies, brake parts, electrical systems, filters, and drive components.
 
-All Bajaj Boxer parts supplied by CrestMAX are manufactured to OEM-compatible specifications by verified Indian manufacturers. We do not supply grey market or unverified stock. Each batch is checked for fitment and quality before packing for export.
+All Bajaj Boxer parts supplied by CrestMAX are manufactured to vehicle-compatible specifications by verified Indian manufacturers. We do not supply grey market or unverified stock. Each batch is checked for fitment and quality before packing for export.
 
 We ship Bajaj Boxer spare parts FOB from Mumbai or CIF to your designated African port. Full export documentation is included: commercial invoice, packing list, and certificate of origin. Wholesale importers and distributors in Nigeria, Ghana, Uganda, and across Africa — contact us for pricing and availability.`,
   },
@@ -69,7 +69,7 @@ Sourced from Ludhiana and India's auto parts manufacturing clusters, our Bajaj R
     heading: "TVS HLX Spare Parts — Wholesale Export to Africa",
     body: `The TVS HLX 100 and HLX 125 are among the most popular motorcycles in East Africa — particularly in Kenya, Tanzania, and Uganda — where they are widely used for Boda Boda motorcycle taxi operations. CrestMAX exports a full range of TVS HLX spare parts from India to wholesale buyers across these markets.
 
-Our TVS HLX parts include engine components, clutch and gearbox parts, brake assemblies, electrical and ignition systems, filters, suspension components, and wheel and drive parts. All parts are OEM-compatible and sourced from verified Indian manufacturers.
+Our TVS HLX parts include engine components, clutch and gearbox parts, brake assemblies, electrical and ignition systems, filters, suspension components, and wheel and drive parts. All parts are aftermarket-compatible and sourced from verified Indian manufacturers.
 
 We export TVS HLX parts FOB Mumbai or CIF to Mombasa, Dar es Salaam, Kampala, and other East African ports. Wholesale pricing available for importers and distributors. Contact us with your requirements.`,
   },
@@ -85,7 +85,7 @@ Available for export FOB Mumbai/Chennai or CIF any African port. We serve wholes
     heading: "TVS King Three-Wheeler Spare Parts — India to Africa Export",
     body: `The TVS King is one of the most widely deployed three-wheelers across Africa, competing directly with the Bajaj RE in urban transport markets. CrestMAX exports TVS King spare parts wholesale from India to African importers and distributors.
 
-Our TVS King parts include engine and transmission components, differential and rear axle parts, clutch and brake assemblies, suspension components, electrical parts, and body panels. All sourced from Indian manufacturers with OEM-compatible specifications.
+Our TVS King parts include engine and transmission components, differential and rear axle parts, clutch and brake assemblies, suspension components, electrical parts, and body panels. All sourced from Indian manufacturers with vehicle-compatible specifications.
 
 We ship to all major African ports — Lagos, Mombasa, Dar es Salaam, Kampala, Nairobi, and more. Full documentation provided including commercial invoice, packing list, and certificate of origin. Contact us for wholesale pricing and availability.`,
   },

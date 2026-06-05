@@ -65,7 +65,7 @@ export default function ProductsClientUI() {
             <span style={{ color: "var(--cm-gold)" }}>Wholesale Export from India to Africa</span>
           </h1>
           <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "16px", color: "rgba(255,255,255,0.5)", lineHeight: "1.7" }}>
-            OEM-compatible spare parts for Africa&apos;s most popular vehicles. Sourced from Ludhiana, India. Exported FOB Mumbai or CIF to any African port.
+            Aftermarket-compatible spare parts for Africa&apos;s most popular vehicles. Sourced from Ludhiana, India. Exported FOB Mumbai or CIF to any African port.
           </p>
         </div>
       </section>

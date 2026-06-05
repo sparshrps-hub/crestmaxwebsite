@@ -59,7 +59,7 @@ const faqSchema = {
 const highlights = [
   { title: "Earn on Every Shipment", body: "Structured commission on every order you bring in. We handle production, shipping and documentation — you focus on selling." },
   { title: "Strong Product Portfolio", body: "76+ catalogued parts for Bajaj Boxer, TVS HLX, CT100, Keke Napep and TVS King — the most popular bikes in Africa." },
-  { title: "Indian Quality, African Prices", body: "OEM-compatible Indian parts at competitive wholesale prices — easy to sell against Chinese alternatives in your market." },
+  { title: "Indian Quality, African Prices", body: "aftermarket-compatible Indian parts at competitive wholesale prices — easy to sell against Chinese alternatives in your market." },
   { title: "Named Director Contacts", body: "You get direct access to Rahul Khullar and the team — not a ticketing system. Real relationships, fast turnarounds." },
 ];
 

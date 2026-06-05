@@ -5,12 +5,12 @@ import SectionHeading from "@/components/SectionHeading";
 export const metadata: Metadata = {
   title: "Vehicle Applications & Compatibility | 2-Wheeler & 3-Wheeler Parts | CrestMAX",
   description:
-    "Spare parts for Bajaj Boxer, TVS HLX, CT100, Bajaj RE/Keke Napep and TVS King — OEM-compatible Indian parts for Africa's most popular 2-wheeler and 3-wheeler vehicles.",
+    "Spare parts for Bajaj Boxer, TVS HLX, CT100, Bajaj RE/Keke Napep and TVS King — aftermarket-compatible Indian parts for Africa's most popular 2-wheeler and 3-wheeler vehicles.",
   alternates: { canonical: "https://crestmax.in/applications" },
   openGraph: {
     title: "Vehicle Applications & Compatibility | 2-Wheeler & 3-Wheeler Parts | CrestMAX",
     description:
-      "OEM-compatible spare parts for Bajaj Boxer, TVS HLX, CT100, Bajaj RE/Keke Napep and TVS King — the most popular vehicles across Africa.",
+      "aftermarket-compatible spare parts for Bajaj Boxer, TVS HLX, CT100, Bajaj RE/Keke Napep and TVS King — the most popular vehicles across Africa.",
     url: "https://crestmax.in/applications",
     type: "website",
   },
@@ -66,7 +66,7 @@ export default function ApplicationsPage() {
             Parts Built for the<br /><span style={{ color: "var(--cm-gold)" }}>Vehicles Africa Runs On</span>
           </h1>
           <p style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 300, fontSize: "16px", color: "rgba(255,255,255,0.55)", lineHeight: "1.75" }}>
-            Our catalogue is curated specifically for the most popular 2-wheelers and 3-wheelers across African markets. OEM-compatible parts sourced from India&apos;s manufacturing belt.
+            Our catalogue is curated specifically for the most popular 2-wheelers and 3-wheelers across African markets. Aftermarket-compatible parts sourced from India&apos;s manufacturing belt.
           </p>
         </div>
       </section>

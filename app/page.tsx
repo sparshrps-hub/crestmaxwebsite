@@ -52,7 +52,7 @@ const faqSchema = {
       name: "Which vehicles do you supply spare parts for?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "CrestMAX supplies OEM-compatible parts for Bajaj Boxer, TVS HLX, CT100, Bajaj RE (Keke Napep), and TVS King — the most widely used 2-wheeler and 3-wheeler vehicles across Africa.",
+        text: "CrestMAX supplies aftermarket-compatible parts for Bajaj Boxer, TVS HLX, CT100, Bajaj RE (Keke Napep), and TVS King — the most widely used 2-wheeler and 3-wheeler vehicles across Africa.",
       },
     },
     {
@@ -231,7 +231,7 @@ export default function HomePage() {
           <SectionHeading label="Our Commitment" title="Why CrestMAX" subtitle="Built for Africa's wholesale trade — quality parts, reliable logistics, direct relationships." />
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "24px" }}>
             {[
-              { icon: <Shield size={28} color="var(--cm-gold)" />, title: "OEM-Grade Quality", desc: "OEM-compatible motorcycle parts from India, manufactured to original specifications. No compromises." },
+              { icon: <Shield size={28} color="var(--cm-gold)" />, title: "Aftermarket Quality", desc: "High-quality aftermarket motorcycle parts from India, manufactured to match vehicle specifications. No compromises." },
               { icon: <Package size={28} color="var(--cm-gold)" />, title: "Export-Ready Packaging", desc: "Bulk and retail pack formats built for long-haul African trade routes. Full documentation included." },
               { icon: <Handshake size={28} color="var(--cm-gold)" />, title: "Direct Relationships", desc: "You deal with our directors directly. Honest pricing and clear communication — no surprises." },
             ].map(({ icon, title, desc }) => (

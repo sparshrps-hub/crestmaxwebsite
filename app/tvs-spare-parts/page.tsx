@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "TVS Spare Parts Exporter from India to Africa — Wholesale Supplier | CrestMAX",
-  description: "CrestMAX exports genuine TVS 2-wheeler spare parts wholesale from Ludhiana, India to Africa. TVS HLX, TVS Apache, TVS Star City parts. FOB Mumbai or CIF to your port.",
+  description: "CrestMAX exports high-quality TVS-compatible spare parts wholesale from Ludhiana, India to Africa. TVS HLX, TVS Apache, TVS Star City parts. FOB Mumbai or CIF to your port.",
   alternates: { canonical: "https://crestmax.in/tvs-spare-parts" },
   openGraph: {
     title: "TVS Spare Parts Exporter from India to Africa | CrestMAX",
@@ -28,7 +28,7 @@ const faqSchema = {
   mainEntity: [
     { "@type": "Question", name: "Does CrestMAX export TVS spare parts to Africa?", acceptedAnswer: { "@type": "Answer", text: "Yes — CrestMAX exports wholesale TVS 2-wheeler spare parts from Ludhiana, India to Kenya, Tanzania, Uganda, Nigeria, Ghana and 12+ African nations. We ship FOB Mumbai or CIF to your port." } },
     { "@type": "Question", name: "Which TVS 2-wheeler models do you supply parts for?", acceptedAnswer: { "@type": "Answer", text: "Our strongest TVS 2-wheeler stock is for TVS HLX 125 — the leading Boda Boda motorcycle in East Africa. We also supply parts for TVS Star City, TVS Apache 160/180, and TVS Sport. Enquire for current availability by model." } },
-    { "@type": "Question", name: "Are your TVS spare parts genuine OEM quality?", acceptedAnswer: { "@type": "Answer", text: "Yes — all parts are sourced from OEM-approved manufacturers in Ludhiana, India's auto parts capital. We supply to TVS's authorised aftermarket network and wholesale importers. We do not supply Chinese-manufactured TVS copies." } },
+    { "@type": "Question", name: "Are your TVS spare parts genuine OEM quality?", acceptedAnswer: { "@type": "Answer", text: "Yes — all parts are sourced from specialist aftermarket manufacturers in Ludhiana, India's auto parts capital. We supply to TVS's authorised aftermarket network and wholesale importers. We do not supply Chinese-manufactured TVS copies." } },
     { "@type": "Question", name: "What is the minimum order for TVS spare parts from India?", acceptedAnswer: { "@type": "Answer", text: "We work with wholesale buyers. Minimum is typically one LCL consolidation shipment (1–3 CBM) for mixed TVS parts, or one 20-foot FCL container for bulk single-model orders. Contact us with your requirements." } },
   ],
 };
@@ -58,7 +58,7 @@ export default function TVSSparePartsPage() {
             <span style={{ color: "var(--cm-gold)" }}>Wholesale Exporter from India to Africa</span>
           </h1>
           <p style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 300, fontSize: "16px", color: "rgba(255,255,255,0.6)", lineHeight: "1.8", marginBottom: "32px" }}>
-            CrestMAX exports genuine TVS 2-wheeler spare parts wholesale from Ludhiana, India to importers and distributors across East and West Africa. TVS HLX 125 — the Boda Boda motorcycle of choice across Kenya, Uganda and Tanzania — is our strongest TVS product line. Shipped FOB Mumbai or CIF to your port.
+            CrestMAX exports high-quality TVS-compatible spare parts wholesale from Ludhiana, India to importers and distributors across East and West Africa. TVS HLX 125 — the Boda Boda motorcycle of choice across Kenya, Uganda and Tanzania — is our strongest TVS product line. Shipped FOB Mumbai or CIF to your port.
           </p>
           <div style={{ display: "flex", gap: "16px", flexWrap: "wrap" }}>
             <Link href="/contact" style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "14px", letterSpacing: "3px", textTransform: "uppercase", background: "var(--cm-gold)", color: "var(--cm-navy-deep)", padding: "14px 36px", borderRadius: "2px", textDecoration: "none" }}>Request a Quote</Link>
@@ -77,7 +77,7 @@ export default function TVSSparePartsPage() {
               TVS Motor Company is India's third-largest two-wheeler manufacturer and one of Africa's most recognised motorcycle brands. The TVS HLX 125 is the preferred Boda Boda motorcycle across Kenya, Uganda and Tanzania — valued for its durability, fuel efficiency, and low cost of maintenance. In West Africa, TVS Apache and Star City have loyal followings in Nigeria and Ghana.
             </p>
             <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "rgba(255,255,255,0.65)", lineHeight: "1.8" }}>
-              TVS has invested heavily in East Africa — with local assembly plants and an authorised dealer network — which means the demand for genuine, Indian-manufactured TVS spare parts is deep and consistent. CrestMAX supplies wholesale parts to importers who service this fleet demand at scale.
+              TVS has invested heavily in East Africa — with local assembly plants and an authorised dealer network — which means the demand for Indian-manufactured TVS-compatible spare parts is deep and consistent. CrestMAX supplies wholesale parts to importers who service this fleet demand at scale.
             </p>
           </div>
           <div>

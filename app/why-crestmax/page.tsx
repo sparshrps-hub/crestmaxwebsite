@@ -6,12 +6,12 @@ import SectionHeading from "@/components/SectionHeading";
 export const metadata: Metadata = {
   title: "Why Choose CrestMAX | Indian Parts vs Chinese Parts | Africa Export",
   description:
-    "OEM-compatible Indian spare parts, full export documentation, reliable supply. Why African wholesale importers choose CrestMAX over Chinese alternatives for Bajaj, TVS and Hero vehicles.",
+    "aftermarket-compatible Indian spare parts, full export documentation, reliable supply. Why African wholesale importers choose CrestMAX over Chinese alternatives for Bajaj, TVS and Hero vehicles.",
   alternates: { canonical: "https://crestmax.in/why-crestmax" },
   openGraph: {
     title: "Why Choose CrestMAX | Indian Parts vs Chinese Parts | Africa Export",
     description:
-      "OEM-compatible Indian spare parts, full export documentation, reliable supply. Why African wholesale importers choose CrestMAX over Chinese alternatives.",
+      "aftermarket-compatible Indian spare parts, full export documentation, reliable supply. Why African wholesale importers choose CrestMAX over Chinese alternatives.",
     url: "https://crestmax.in/why-crestmax",
     type: "website",
   },
@@ -35,7 +35,7 @@ const faqSchema = {
       name: "Why are Indian spare parts better than Chinese parts for African vehicles?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Indian parts are manufactured specifically for Bajaj, TVS, and Hero models — the same bikes sold in Africa. They match OEM specifications and come with a traceable supply chain. Chinese generic parts often use approximate dimensions, leading to fitment problems and early wear.",
+        text: "Indian aftermarket parts are manufactured by Ludhiana specialists with decades of experience producing parts specifically compatible with Bajaj, TVS, and Hero models sold in Africa. They use correct dimensions and come with a traceable supply chain. Chinese generic parts often use approximate dimensions, leading to fitment problems and early wear.",
       },
     },
     {
@@ -43,7 +43,7 @@ const faqSchema = {
       name: "What quality standards do CrestMAX parts meet?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Our parts are sourced exclusively from verified Indian manufacturers and checked against original equipment specifications before dispatch. We do not stock grey market or unverified parts.",
+        text: "Our parts are sourced exclusively from verified, experienced Indian aftermarket manufacturers. We do not stock grey market, unverified, or Chinese-manufactured copies. We do not stock grey market or unverified parts.",
       },
     },
     {
@@ -69,7 +69,7 @@ const pillars = [
   {
     icon: <Shield size={32} color="var(--cm-gold)" />,
     title: "OEM-Grade Specifications",
-    desc: "Every part is manufactured to match or exceed original equipment specifications. No compromises on quality — because your customers depend on it. Our OEM-compatible motorcycle parts from India are sourced only from verified manufacturers.",
+    desc: "Every part comes from manufacturers with decades of experience producing compatible parts for these specific models. No compromises on quality — because your customers depend on it. Our aftermarket-compatible motorcycle parts from India are sourced only from verified manufacturers.",
   },
   {
     icon: <Package size={32} color="var(--cm-gold)" />,
