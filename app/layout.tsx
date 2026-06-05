@@ -111,7 +111,9 @@ const organizationSchema = {
       availableLanguage: "English",
     },
   ],
-  sameAs: [],
+  sameAs: [
+    "https://share.google/5eRgqSVV46VCD5zOu",
+  ],
   knowsAbout: [
     "Bajaj Boxer spare parts export",
     "TVS HLX spare parts",
