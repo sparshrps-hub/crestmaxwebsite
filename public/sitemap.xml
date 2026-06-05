@@ -10,7 +10,19 @@
   <url><loc>https://crestmax.in/products/tvs-king</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://crestmax.in/applications</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://crestmax.in/why-crestmax</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://crestmax.in/markets</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets/nigeria</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets/ghana</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets/kenya</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets/tanzania</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets/uganda</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets/ethiopia</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets/dr-congo</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets/rwanda</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets/morocco</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets/angola</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets/south-africa</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/markets/algeria</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://crestmax.in/contact</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://crestmax.in/trade-partner</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://crestmax.in/sales-agent</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>

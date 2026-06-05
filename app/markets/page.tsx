@@ -55,10 +55,10 @@ export default function MarketsPage() {
               <div key={m.name}>
                 <MarketCard {...m} />
                 <Link
-                  href="/products"
+                  href={`/markets/${m.slug}`}
                   style={{ display: "block", fontFamily: "Nunito Sans, sans-serif", fontSize: "12px", letterSpacing: "1px", textTransform: "uppercase", color: "var(--cm-gold)", textDecoration: "none", marginTop: "8px", paddingLeft: "4px", transition: "opacity 0.2s" }}
                 >
-                  View parts for {m.name} importers →
+                  Spare parts for {m.name} importers →
                 </Link>
               </div>
             ))}
