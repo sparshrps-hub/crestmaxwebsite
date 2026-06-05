@@ -55,11 +55,26 @@ const errorStyle: React.CSSProperties = {
 
 export default function TradePartnerForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
   const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
 
-  const onSubmit = (data: FormData) => {
-    console.log("Trade Partner enquiry:", data);
-    setSubmitted(true);
+  const onSubmit = async (data: FormData) => {
+    setSubmitting(true);
+    setError("");
+    try {
+      const res = await fetch("/api/trade-partner", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error("Server error");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please try WhatsApp or email us directly at info@crestmax.in");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (submitted) {
@@ -154,12 +169,15 @@ export default function TradePartnerForm() {
         <textarea {...register("message")} placeholder="How long have you been operating? Who are your current suppliers? What makes you a strong partner for CrestMAX?" rows={5} style={{ ...inputStyle, resize: "vertical" }} />
       </div>
 
+      {error && <p style={{ ...errorStyle, fontSize: "14px", textAlign: "center" }}>{error}</p>}
+
       <button
         type="submit"
-        style={{ width: "100%", background: "var(--cm-gold)", color: "var(--cm-navy-deep)", fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "16px", letterSpacing: "3px", textTransform: "uppercase", border: "none", borderRadius: "2px", padding: "16px", cursor: "pointer", transition: "background 0.2s", marginTop: "8px" }}
+        disabled={submitting}
+        style={{ width: "100%", background: submitting ? "rgba(201,168,76,0.5)" : "var(--cm-gold)", color: "var(--cm-navy-deep)", fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "16px", letterSpacing: "3px", textTransform: "uppercase", border: "none", borderRadius: "2px", padding: "16px", cursor: submitting ? "not-allowed" : "pointer", transition: "background 0.2s", marginTop: "8px" }}
         className="btn-gold-fill"
       >
-        Submit Trade Partner Application
+        {submitting ? "Sending..." : "Submit Trade Partner Application"}
       </button>
     </form>
   );

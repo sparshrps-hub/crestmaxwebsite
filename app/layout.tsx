@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const rajdhani = Rajdhani({
   weight: ["400", "600", "700"],
@@ -144,6 +145,9 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton />
       </body>
+      {process.env.NEXT_PUBLIC_GA_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+      )}
     </html>
   );
 }
