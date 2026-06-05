@@ -42,7 +42,8 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error("Enquiry email error:", error);
-    return NextResponse.json({ error: "Failed to send enquiry" }, { status: 500 });
+    const message = error instanceof Error ? error.message : String(error);
+    console.error("Enquiry email error:", message);
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

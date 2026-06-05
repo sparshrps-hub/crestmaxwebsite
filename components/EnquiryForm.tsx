@@ -35,10 +35,13 @@ export default function EnquiryForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
-      if (!res.ok) throw new Error("Server error");
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || "Server error");
+      }
       setSubmitted(true);
-    } catch {
-      setError("Something went wrong. Please try WhatsApp or email us directly at info@crestmax.in");
+    } catch (e) {
+      setError("Error: " + (e instanceof Error ? e.message : "Unknown"));
     } finally {
       setSubmitting(false);
     }
