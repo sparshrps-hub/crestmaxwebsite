@@ -2,12 +2,14 @@
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { countryCodes } from "@/lib/countryCodes";
 
 type FormData = {
   fullName: string;
   country: string;
   email: string;
-  whatsapp: string;
+  whatsappCode: string;
+  whatsappNumber: string;
   currentRole: string;
   marketsYouCover: string;
   clientBase: string;
@@ -56,21 +58,30 @@ export default function SalesAgentForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+  const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
+    defaultValues: { whatsappCode: "+234" },
+  });
 
   const onSubmit = async (data: FormData) => {
     setSubmitting(true);
     setError("");
     try {
+      const payload = {
+        ...data,
+        whatsapp: `${data.whatsappCode} ${data.whatsappNumber}`,
+      };
       const res = await fetch("/api/sales-agent", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify(payload),
       });
-      if (!res.ok) throw new Error("Server error");
+      if (!res.ok) {
+        const body = await res.json().catch(() => ({}));
+        throw new Error(body.error || "Server error");
+      }
       setSubmitted(true);
-    } catch {
-      setError("Something went wrong. Please try WhatsApp or email us directly at info@crestmax.in");
+    } catch (e) {
+      setError("Error: " + (e instanceof Error ? e.message : "Unknown"));
     } finally {
       setSubmitting(false);
     }
@@ -106,17 +117,38 @@ export default function SalesAgentForm() {
         </div>
       </div>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
-        <div>
-          <label style={labelStyle}>Email Address *</label>
-          <input {...register("email", { required: "Email is required", pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Enter a valid email" } })} type="email" placeholder="your@email.com" style={inputStyle} />
-          {errors.email && <p style={errorStyle}>{errors.email.message}</p>}
+      <div>
+        <label style={labelStyle}>Email Address *</label>
+        <input {...register("email", { required: "Email is required", pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Enter a valid email" } })} type="email" placeholder="your@email.com" style={inputStyle} />
+        {errors.email && <p style={errorStyle}>{errors.email.message}</p>}
+      </div>
+
+      <div>
+        <label style={labelStyle}>WhatsApp Number *</label>
+        <div style={{ display: "flex", gap: "8px" }}>
+          <select
+            {...register("whatsappCode", { required: "Select country code" })}
+            style={{ ...inputStyle, width: "auto", minWidth: "160px", appearance: "none", flexShrink: 0 }}
+          >
+            {countryCodes.map((c) => (
+              <option key={c.code + c.country} value={c.code}>
+                {c.flag} {c.country} ({c.code})
+              </option>
+            ))}
+          </select>
+          <input
+            {...register("whatsappNumber", {
+              required: "WhatsApp number is required",
+              pattern: { value: /^[0-9\s\-]{6,15}$/, message: "Enter a valid number" },
+            })}
+            type="tel"
+            placeholder="800 000 0000"
+            style={{ ...inputStyle, flex: 1 }}
+          />
         </div>
-        <div>
-          <label style={labelStyle}>WhatsApp Number *</label>
-          <input {...register("whatsapp", { required: "WhatsApp number is required" })} type="tel" placeholder="+234 XXX XXX XXXX" style={inputStyle} />
-          {errors.whatsapp && <p style={errorStyle}>{errors.whatsapp.message}</p>}
-        </div>
+        {(errors.whatsappCode || errors.whatsappNumber) && (
+          <p style={errorStyle}>{errors.whatsappCode?.message || errors.whatsappNumber?.message}</p>
+        )}
       </div>
 
       <div>

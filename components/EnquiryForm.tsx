@@ -2,13 +2,15 @@
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { countryCodes } from "@/lib/countryCodes";
 
 type FormData = {
   fullName: string;
   companyName: string;
   country: string;
   email: string;
-  whatsapp: string;
+  whatsappCode: string;
+  whatsappNumber: string;
   enquiryType: string;
   productInterest: string[];
   partsNeeded: string;
@@ -24,16 +26,22 @@ export default function EnquiryForm() {
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
-  const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+  const { register, handleSubmit, formState: { errors } } = useForm<FormData>({
+    defaultValues: { whatsappCode: "+234" },
+  });
 
   const onSubmit = async (data: FormData) => {
     setSubmitting(true);
     setError("");
     try {
+      const payload = {
+        ...data,
+        whatsapp: `${data.whatsappCode} ${data.whatsappNumber}`,
+      };
       const res = await fetch("/api/enquire", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify(payload),
       });
       if (!res.ok) {
         const body = await res.json().catch(() => ({}));
@@ -58,6 +66,7 @@ export default function EnquiryForm() {
     fontSize: "15px",
     outline: "none",
     transition: "border-color 0.2s",
+    boxSizing: "border-box",
   };
 
   const labelStyle: React.CSSProperties = {
@@ -130,8 +139,31 @@ export default function EnquiryForm() {
       </div>
 
       <div>
-        <label style={labelStyle}>WhatsApp Number (with country code)</label>
-        <input {...register("whatsapp")} type="tel" placeholder="+234 XXXX XXXXXX" style={inputStyle} />
+        <label style={labelStyle}>WhatsApp Number *</label>
+        <div style={{ display: "flex", gap: "8px" }}>
+          <select
+            {...register("whatsappCode", { required: "Select country code" })}
+            style={{ ...inputStyle, width: "auto", minWidth: "160px", appearance: "none", flexShrink: 0 }}
+          >
+            {countryCodes.map((c) => (
+              <option key={c.code + c.country} value={c.code}>
+                {c.flag} {c.country} ({c.code})
+              </option>
+            ))}
+          </select>
+          <input
+            {...register("whatsappNumber", {
+              required: "WhatsApp number is required",
+              pattern: { value: /^[0-9\s\-]{6,15}$/, message: "Enter a valid number" },
+            })}
+            type="tel"
+            placeholder="800 000 0000"
+            style={{ ...inputStyle, flex: 1 }}
+          />
+        </div>
+        {(errors.whatsappCode || errors.whatsappNumber) && (
+          <p style={errorStyle}>{errors.whatsappCode?.message || errors.whatsappNumber?.message}</p>
+        )}
       </div>
 
       <div>
