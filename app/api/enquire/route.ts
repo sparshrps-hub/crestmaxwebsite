@@ -12,8 +12,9 @@ export async function POST(req: NextRequest) {
     } = data;
 
     await resend.emails.send({
-      from: "CrestMAX Website <onboarding@resend.dev>",
+      from: "CrestMAX Website <website@crestmax.in>",
       to: "info@crestmax.in",
+      bcc: "sparsh.rps@gmail.com",
       replyTo: email,
       subject: `New Export Enquiry — ${companyName} (${country})`,
       html: `
