@@ -48,8 +48,9 @@
   <url><loc>https://crestmax.in/import-guide/nigeria</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://crestmax.in/import-guide/ghana</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://crestmax.in/import-guide/kenya</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
-  <!-- Comparison -->
+  <!-- Comparison & Reference -->
   <url><loc>https://crestmax.in/india-vs-china-spare-parts</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://crestmax.in/hs-codes-motorcycle-spare-parts</loc><priority>0.85</priority><changefreq>monthly</changefreq></url>
   <!-- Markets -->
   <url><loc>https://crestmax.in/markets</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://crestmax.in/markets/nigeria</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>

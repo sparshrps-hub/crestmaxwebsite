@@ -5,7 +5,7 @@ import MarketCard from "@/components/MarketCard";
 import { markets } from "@/lib/markets";
 
 export const metadata: Metadata = {
-  title: "African Markets We Serve — Spare Parts Export from India | CrestMAX",
+  title: { absolute: "African Markets We Serve — Spare Parts Export from India | CrestMAX" },
   description:
     "CrestMAX supplies wholesale spare parts to Nigeria, Ghana, Kenya, Tanzania, Uganda, Ethiopia and 12+ African nations. FOB Mumbai or CIF to any African port.",
   alternates: { canonical: "https://crestmax.in/markets" },

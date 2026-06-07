@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Indian vs Chinese Spare Parts for Africa: A Definitive Comparison | CrestMAX",
+  title: { absolute: "Indian vs Chinese Spare Parts for Africa: A Definitive Comparison | CrestMAX" },
   description: "Why African importers and mechanics choose Indian spare parts over Chinese alternatives. Quality standards, counterfeiting risk, after-sales support, road performance data compared.",
   alternates: { canonical: "https://crestmax.in/india-vs-china-spare-parts" },
   openGraph: {

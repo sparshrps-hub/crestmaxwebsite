@@ -76,14 +76,17 @@ function renderBody(body: string) {
       );
     }
 
-    // Bold inline (**text**)
+    // Bold (**text**) and markdown links ([text](url))
     const renderInline = (text: string) => {
-      const parts = text.split(/(\*\*[^*]+\*\*)/g);
-      return parts.map((part, pi) =>
-        part.startsWith("**") && part.endsWith("**")
-          ? <strong key={pi} style={{ color: "#FFFFFF", fontWeight: 700 }}>{part.slice(2, -2)}</strong>
-          : part
-      );
+      const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
+      return parts.map((part, pi) => {
+        if (part.startsWith("**") && part.endsWith("**"))
+          return <strong key={pi} style={{ color: "#FFFFFF", fontWeight: 700 }}>{part.slice(2, -2)}</strong>;
+        const linkMatch = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (linkMatch)
+          return <Link key={pi} href={linkMatch[2]} style={{ color: "var(--cm-gold)", textDecoration: "underline", textDecorationColor: "rgba(201,168,76,0.4)" }}>{linkMatch[1]}</Link>;
+        return part;
+      });
     };
 
     // Bullet list

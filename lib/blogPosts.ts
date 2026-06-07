@@ -44,7 +44,7 @@ The key barrier is knowledge: most Nigerian traders don't know how to verify an 
 
 **Ask for references.** Legitimate exporters shipping to Africa can provide references from existing customers. A company that has shipped to Nigeria or Ghana before will have shipping records and contacts.
 
-CrestMAX exports from Ludhiana — India's spare parts capital — and can provide IEC, GST, and customer references on request.`,
+[CrestMAX](/) exports from Ludhiana — India's spare parts capital — and can provide IEC, GST, and customer references on request. Browse our [Bajaj spare parts catalogue](/bajaj-spare-parts) or [Keke Napep parts](/products/bajaj-re) to verify our range.`,
       },
       {
         heading: "Step 2 — Identify Parts and Confirm HS Codes",
@@ -130,7 +130,7 @@ Your Indian exporter will provide: Commercial Invoice, Packing List, Bill of Lad
     sections: [
       {
         heading: "The Keke Napep Parts Market in Nigeria",
-        body: `Nigeria has an estimated 2–4 million Keke Napep (Bajaj RE three-wheeler auto-rickshaws) in active commercial use. In Lagos alone, hundreds of thousands of Keke units operate daily — in Surulere, Oshodi, Ikeja, Agege, and every neighbourhood outside the main Island.
+        body: `Nigeria has an estimated 2–4 million [Keke Napep](/products/bajaj-re) (Bajaj RE three-wheeler auto-rickshaws) in active commercial use. In Lagos alone, hundreds of thousands of Keke units operate daily — in Surulere, Oshodi, Ikeja, Agege, and every neighbourhood outside the main Island.
 
 Each Keke Napep requires regular maintenance and parts replacement. The average commercial Keke runs 10–14 hours per day on rough urban roads. The result: a steady, predictable demand for specific parts categories, week after week.
 
@@ -291,9 +291,11 @@ This ecosystem is the reason CrestMAX sources exclusively from Ludhiana rather t
     ],
     relatedLinks: [
       { label: "India vs China Spare Parts — Full Comparison", href: "/india-vs-china-spare-parts" },
+      { label: "Bajaj Spare Parts from India", href: "/bajaj-spare-parts" },
       { label: "Bajaj Boxer Engine Parts", href: "/bajaj-boxer-engine-parts" },
       { label: "CT100 Piston Kits", href: "/ct100-piston-kit" },
       { label: "Why CrestMAX", href: "/why-crestmax" },
+      { label: "Request a Quote", href: "/contact" },
     ],
   },
   {
@@ -428,7 +430,7 @@ Here is why:
       },
       {
         heading: "FOB vs CIF: Practical Example",
-        body: `Let's say you are importing a mixed container of Bajaj spare parts from CrestMAX, Ludhiana to Lagos Apapa.
+        body: `Let's say you are importing a mixed container of [Bajaj spare parts](/bajaj-spare-parts) from [CrestMAX](/), Ludhiana to Lagos Apapa.
 
 **FOB pricing scenario:**
 - Ex-Ludhiana parts value: $8,000

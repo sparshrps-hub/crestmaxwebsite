@@ -6,7 +6,7 @@ import SectionHeading from "@/components/SectionHeading";
 export const metadata: Metadata = {
   title: "Why Choose CrestMAX | Indian Parts vs Chinese Parts | Africa Export",
   description:
-    "aftermarket-compatible Indian spare parts, full export documentation, reliable supply. Why African wholesale importers choose CrestMAX over Chinese alternatives for Bajaj, TVS and Hero vehicles.",
+    "Aftermarket-compatible Indian spare parts, full export documentation, reliable supply. Why African wholesale importers choose CrestMAX over Chinese alternatives for Bajaj, TVS and Hero vehicles.",
   alternates: { canonical: "https://crestmax.in/why-crestmax" },
   openGraph: {
     title: "Why Choose CrestMAX | Indian Parts vs Chinese Parts | Africa Export",
