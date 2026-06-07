@@ -1072,20 +1072,6 @@ We use **USD 1,200** for our base-case estimate.`,
       { label: "Request a Quote from CrestMAX", href: "/contact" },
     ],
   },
-];
-
-export function getBlogPostBySlug(slug: string): BlogPost | undefined {
-  return blogPosts.find((p) => p.slug === slug);
-}
-
-export function getAllBlogSlugs(): string[] {
-  return blogPosts.map((p) => p.slug);
-}
-
-// ─── Additional recommended posts ────────────────────────────────────────────
-// appended below to keep the array clean; getBlogPostBySlug searches the full array
-
-blogPosts.push(
 
   // ── Nigeria documentation ──────────────────────────────────────────────────
   {
@@ -1991,4 +1977,12 @@ A PI that passes all of these checks is a PI you can work with. One that fails o
     ],
   },
 
-);
+];
+
+export function getBlogPostBySlug(slug: string): BlogPost | undefined {
+  return blogPosts.find((p) => p.slug === slug);
+}
+
+export function getAllBlogSlugs(): string[] {
+  return blogPosts.map((p) => p.slug);
+}
