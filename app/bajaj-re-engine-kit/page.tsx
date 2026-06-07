@@ -156,37 +156,21 @@ export default function BajajREEngineKitPage() {
         </div>
       </section>
 
-      {/* Specs table */}
+      {/* Ordering info */}
       <section style={{ padding: "80px 24px", background: "var(--cm-navy)", borderTop: "1px solid var(--cm-gold-border)" }}>
         <div style={{ maxWidth: "860px", margin: "0 auto" }}>
           <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "10px", letterSpacing: "4px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "14px" }}>Ordering Info</p>
-          <div style={{ overflowX: "auto" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: "Nunito Sans, sans-serif", fontSize: "14px" }}>
-              <thead>
-                <tr>
-                  {["Parameter", "Detail"].map((h) => (
-                    <th key={h} style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "13px", letterSpacing: "1px", textTransform: "uppercase", color: "var(--cm-gold)", background: "var(--cm-navy-deep)", padding: "12px 16px", border: "1px solid var(--cm-gold-border)", textAlign: "left" }}>{h}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ["Compatible Model", "Bajaj RE (all 4-stroke variants), Keke Napep RE"],
-                  ["Engine Type", "4-stroke, single cylinder, air-cooled, 215cc (RE Compact: 145cc)"],
-                  ["Bore Options", "Standard + oversize (+0.25, +0.50mm)"],
-                  ["HS Code (India Export)", "8714.10 — parts for motorcycles/3-wheelers"],
-                  ["Minimum Order", "5 kits (one box)"],
-                  ["Units per 20ft Container", "300–400 engine kits (varies with packing)"],
-                  ["Shipping Terms", "FOB Ludhiana · CIF Apapa / Tema / Mombasa"],
-                  ["Lead Time", "10–18 days from order confirmation"],
-                ].map(([param, detail]) => (
-                  <tr key={param}>
-                    <td style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.8)", padding: "12px 16px", border: "1px solid rgba(255,255,255,0.06)", fontWeight: 600 }}>{param}</td>
-                    <td style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.55)", padding: "12px 16px", border: "1px solid rgba(255,255,255,0.06)" }}>{detail}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "32px", letterSpacing: "2px", color: "#FFFFFF", textTransform: "uppercase", marginBottom: "24px" }}>
+            How to Order
+          </h2>
+          <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "rgba(255,255,255,0.65)", lineHeight: "1.85", marginBottom: "20px" }}>
+            The Bajaj RE engine family includes several variants with different displacements and bore sizes — RE Compact, RE 4-stroke, and DTS-i. Confirm your engine code (stamped on the block) before ordering so we supply the correct kit. Shipping terms FOB Ludhiana or CIF to Apapa, Tema, or Mombasa. Lead times and minimum quantities confirmed at time of enquiry.
+          </p>
+          <div style={{ background: "rgba(201,168,76,0.06)", border: "1px solid var(--cm-gold-border)", borderRadius: "2px", padding: "20px 24px" }}>
+            <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "2px", color: "var(--cm-gold)", margin: "0 0 6px" }}>NOTE</p>
+            <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.55)", lineHeight: "1.7", margin: 0 }}>
+              Engine specifications, bore dimensions, and component grades are confirmed on the product data sheet supplied with each order. Contact us with your engine code for a compatibility confirmation before placing a bulk order.
+            </p>
           </div>
         </div>
       </section>

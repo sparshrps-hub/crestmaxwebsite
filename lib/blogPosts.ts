@@ -885,36 +885,32 @@ But Ladipo prices are not factory prices. They reflect the full import chain: th
 This is not a criticism of Ladipo — the traders there serve a critical role for buyers who need 1–5 pieces immediately with no lead time. The question is whether that convenience is worth the price premium for importers who can plan 30–45 days ahead.`,
       },
       {
-        heading: "Price Comparison: Bajaj Boxer Parts",
-        body: `We gathered indicative price ranges from Ladipo Market traders (March–May 2026) and compared with CrestMAX ex-India prices. All Indian prices are quoted ex-works Ludhiana — add approximately USD 2,500–3,000 freight and 25–30% import duties for the full landed cost, but these are absorbed over the full container, not per unit.
+        heading: "The Price Gap: Ladipo vs. Importing Direct",
+        body: `Prices at Ladipo Market and ex-India wholesale prices both fluctuate — with the Naira exchange rate, shipping cycles, and seasonal demand. The figures below are **indicative only**, based on general market knowledge. Verify current Ladipo prices yourself with traders, and contact CrestMAX directly for current wholesale pricing.
 
-| Part | Ladipo Market (NGN) | CrestMAX India (approx NGN equivalent ex-works) | Ladipo Premium |
+**What the structure looks like (indicative ranges):**
+
+| Part | Ladipo Market (indicative NGN) | Ex-India wholesale (indicative NGN equiv.) | Typical markup |
 |---|---|---|---|
-| Bajaj Boxer Complete Engine Kit | 45,000–85,000 | 12,800–24,000 | ~2.5–3.5× |
-| Bajaj Boxer Piston + Rings Set | 8,500–14,000 | 2,800–5,200 | ~2.5–3× |
-| Bajaj Boxer Clutch Plate Set (5-disc) | 6,500–11,000 | 2,100–3,600 | ~2.5–3× |
-| Bajaj Boxer Brake Shoe (front + rear) | 3,200–5,500 | 900–1,800 | ~2.5–3× |
-| Bajaj Boxer CDI Unit | 7,500–13,000 | 2,400–4,200 | ~2.5–3.5× |
-| Bajaj Boxer Chain Sprocket Set | 4,500–7,500 | 1,400–2,600 | ~2.8–3× |
+| Bajaj Boxer Complete Engine Kit | 45,000–85,000 | 12,000–25,000 | ~2.5–3.5× |
+| Bajaj Boxer Piston + Rings Set | 8,000–14,000 | 2,500–5,500 | ~2.5–3× |
+| Bajaj Boxer Clutch Plate Set | 6,000–11,000 | 2,000–4,000 | ~2.5–3× |
+| Bajaj Boxer CDI Unit | 7,000–13,000 | 2,200–4,500 | ~2.5–3× |
+| Bajaj Boxer Chain Sprocket Set | 4,000–8,000 | 1,200–3,000 | ~2.5–3× |
 
-Exchange rate used: NGN 1,650/USD (approximate mid-2026 parallel rate for calculations).
+**Important:** These are illustrative ranges to show the structure of the price gap — not quoted prices. The Naira/USD rate, part grade (OEM-compatible vs. generic), and quantity all affect the actual numbers. Always get current quotes before making a business decision.
 
-**What the numbers mean:** An importer who can move a 20ft container of Boxer parts — say, 500 engine kits — at CrestMAX prices can sell at a 30–40% discount to Ladipo retail and still achieve a 60–80% gross margin. The economics of direct importing work strongly in favour of volume buyers.`,
+The key structural point remains true regardless of exact figures: by the time a part reaches a Ladipo stall it has passed through 2–4 hands, each adding margin. A direct importer removes those layers.`,
       },
       {
         heading: "Price Comparison: Keke Napep Parts",
         body: `Keke Napep (Bajaj RE/TVS King variants) parts attract even higher Ladipo premiums because they move faster — the Keke fleet in Lagos, Abuja, Kano, and Port Harcourt is enormous and mechanics reorder frequently.
 
-| Part | Ladipo Market (NGN) | CrestMAX India (approx NGN equivalent) | Ladipo Premium |
-|---|---|---|---|
-| Keke Napep Piston Kit (complete) | 12,000–20,000 | 3,600–6,800 | ~2.5–3× |
-| Keke Napep Crankshaft Assembly | 35,000–65,000 | 11,000–22,000 | ~2.5–3× |
-| Keke Napep Gear Box Assembly | 45,000–80,000 | 14,000–28,000 | ~2.5–3× |
-| Keke Napep Propeller Shaft | 18,000–32,000 | 5,500–11,000 | ~2.5–3× |
-| Keke Napep Brake Drum (rear) | 5,500–9,000 | 1,800–3,200 | ~2.8–3× |
-| Keke Napep CV Joint | 8,500–15,000 | 2,800–5,400 | ~2.7–3× |
+The same structural gap applies: indicative Ladipo retail prices for Keke parts typically run 2.5–3.5× the ex-India wholesale equivalent. For high-value assemblies (gearbox, crankshaft, propeller shaft), the absolute Naira difference is significant — making direct importers who maintain stock of these items highly competitive against Ladipo-sourced supply.
 
-The Keke market is also more quality-conscious than motorcycle-only buyers — operators who run commercial fleets are willing to pay more for parts that do not fail mid-route. Indian OEM-compatible parts from CrestMAX are typically the same quality as what Ladipo traders sell as "original" — and sometimes better, because the importer chain at Ladipo can introduce counterfeit mixing.`,
+**Contact CrestMAX for current wholesale pricing** on specific Keke Napep parts. We will quote per-unit FOB prices by part number, from which you can calculate your own landed cost using the framework in our container cost guide.
+
+The Keke market is also more quality-conscious than motorcycle-only buyers — operators who run commercial fleets are willing to pay more for parts that do not fail mid-route. Indian OEM-compatible parts from CrestMAX are typically the same quality as what Ladipo traders sell as "original" — and sometimes better, because the multi-step import chain at Ladipo can introduce counterfeit mixing.`,
       },
       {
         heading: "What Ladipo Does Better",
@@ -942,7 +938,7 @@ The Keke market is also more quality-conscious than motorcycle-only buyers — o
 
 **You have established distribution channels.** Either you have your own retail/workshop customer base, or you have relationships with Ladipo traders or regional distributors who will absorb volume quickly.
 
-If you meet these four conditions, direct importing from India typically generates **40–60% better unit economics** than buying from Ladipo. On a NGN 80 million turnover, that is an additional NGN 32–48 million in gross profit annually.`,
+If you meet these four conditions, direct importing from India typically generates significantly better unit economics than buying from Ladipo — the multi-hand markup you eliminate goes directly into your margin. The exact improvement depends on your parts mix, volumes, and the current exchange rate, which is why getting live quotes from CrestMAX before running your business case is essential.`,
       },
     ],
     relatedLinks: [
@@ -968,26 +964,19 @@ If you meet these four conditions, direct importing from India typically generat
         heading: "Why Nobody Gives You a Straight Answer",
         body: `Ask five people what it costs to import a container from India to Nigeria and you will get five different numbers. That is because the total cost depends on: the value of goods, the HS codes, the exchange rate at time of clearance, which shipping line you use, how fast your agent works, and whether you get Red or Green lane at Apapa. Everyone answers the version they experienced, which may not match yours.
 
-This guide gives you a **base-case calculation** for a typical CrestMAX customer — a Nigerian importer ordering a 20ft container of Bajaj and Keke Napep spare parts with a declared CIF value of USD 32,000. We will walk through every cost item so you can adjust for your own numbers.
+This guide gives you a **framework calculation** — a worked example to show the structure of costs, not a quoted price. Every figure here is **indicative**. Your actual cost depends on: what parts you order and at what price, the freight rate at time of booking, the exchange rate at clearance, your clearing agent's fees, and whether you hit Green or Red lane at Apapa.
 
-All figures are in USD unless stated, using approximate 2026 mid-market rates. Naira equivalents are illustrative at NGN 1,650/USD.`,
+Use this as a planning model. Before committing to a shipment, get live quotes from: CrestMAX for goods pricing, a freight forwarder for current Mumbai–Apapa rates, and your clearing agent for a PAAR estimate on your specific HS codes.
+
+All USD figures use approximate 2026 mid-market rates as a reference only.`,
       },
       {
         heading: "The Goods Cost (FOB India)",
-        body: `A typical CrestMAX 20ft spare parts order might look like:
+        body: `A mixed 20ft spare parts order might contain engine kits, piston kits, clutch sets, brake components, electrical parts, and chain/sprocket sets across Bajaj Boxer, Keke Napep, and CT100 lines. A well-filled 20ft container typically represents **USD 20,000–40,000 of goods** at FOB India prices, depending on the parts mix and quantities.
 
-- 200 × Bajaj Boxer engine kits @ USD 35 each: USD 7,000
-- 300 × Keke Napep piston kits @ USD 12 each: USD 3,600
-- 200 × Bajaj Boxer clutch plate sets @ USD 8 each: USD 1,600
-- 400 × Keke Napep brake drum sets @ USD 7.50 each: USD 3,000
-- 500 × Bajaj CT100 piston rings @ USD 4 each: USD 2,000
-- 300 × Keke Napep gear sets @ USD 22 each: USD 6,600
-- 400 × various electrical parts (CDI, regulators) @ USD 9 avg: USD 3,600
-- Sundry smaller parts: USD 2,600
+For this worked example we use **USD 30,000 FOB Ludhiana** as the base — a reasonable mid-range figure for a full container order. **This is not a quoted price.** Contact CrestMAX for current per-unit pricing on specific parts and quantities.
 
-**Total FOB Ludhiana: approximately USD 30,000**
-
-This fills a 20ft container comfortably — 20ft containers can carry approximately 28 CBM or up to 20,000 kg of cargo. Spare parts tend to be heavy and dense; most CrestMAX 20ft containers run 8,000–14,000 kg.`,
+20ft containers carry approximately 25–28 CBM or up to 20,000 kg. Spare parts are heavy and dense — most CrestMAX 20ft containers run 8,000–14,000 kg, so weight rather than volume is usually the constraint.`,
       },
       {
         heading: "Freight and Insurance",
@@ -1007,19 +996,19 @@ Standard all-risk marine insurance at 0.5% of CIF value: CIF = FOB + Freight = U
         heading: "Nigerian Customs Duties and Levies",
         body: `Nigerian customs duty on motorcycle and 3-wheeler spare parts falls under several HS chapters with different rates. Here is the breakdown for a mixed spare parts consignment:
 
-**Import Duty:** The Nigeria Customs Tariff shows 5% for most engine spare parts (HS 8714.10, 8714.99) and 10–20% for some categories. However, in practice, a mixed spare parts container is often assessed at a blended rate. Using a weighted average of approximately **10% on CIF value** for our mix: 10% × USD 33,000 = **USD 3,300**
+**All duty rates below are indicative. Verify the current Nigeria Customs Tariff for your specific HS codes before relying on these figures — rates change with each Finance Act and your clearing agent will have the current schedule.**
 
-**VAT (7.5% on duty-inclusive value):** 7.5% × (USD 33,000 + USD 3,300) = 7.5% × USD 36,300 = **USD 2,723**
+**Import Duty:** The Nigeria Customs Tariff applies different rates by HS chapter. Engine spare parts under 8714.10 and 8714.99 have historically attracted 5–20% depending on classification. For a mixed spare parts container, a blended effective rate of approximately **5–15%** is commonly seen — the exact figure depends on how your agent classifies the consignment. For this example we use 10% on CIF: 10% × USD 33,000 = **~USD 3,300 (indicative)**
 
-**CISS (Comprehensive Import Supervision Scheme) — 1% of FOB:** 1% × USD 30,000 = **USD 300**
+**VAT (7.5% on duty-inclusive value):** 7.5% × (CIF + duty) = approximately **USD 2,700 (indicative)**
 
-**ETLS (ECOWAS Trade Liberalisation Scheme levy) — 0.5% of CIF:** 0.5% × USD 33,000 = **USD 165**
+**CISS (Comprehensive Import Supervision Scheme) — 1% of FOB:** approximately **USD 300**
 
-**NESREA Levy (environmental) — 1% of CIF for some categories:** If applicable: 1% × USD 33,000 = **USD 330** (may not apply to all parts; check with your agent)
+**ETLS (ECOWAS Trade Liberalisation Scheme levy) — 0.5% of CIF:** approximately **USD 165**
 
-**Total statutory taxes and levies: approximately USD 6,818**
+**NESREA Levy:** May apply to some categories — confirm with your agent.
 
-Note: These are rough estimates — the actual assessment depends on your specific HS codes and the customs officer's valuation. Your clearing agent should be able to give you a PAAR estimate before you commit to the shipment.`,
+**Total statutory charges: roughly USD 6,000–8,000 on a USD 33,000 CIF shipment** — but your clearing agent's PAAR will give you the precise figure for your HS codes before you commit.`,
       },
       {
         heading: "Clearing, Port, and Local Charges",
@@ -1056,9 +1045,9 @@ We use **USD 1,200** for our base-case estimate.`,
 | Clearing agent + port charges | 1,200 |
 | **Total Landed Cost** | **~40,658** |
 
-**Cost as a percentage of goods value:** approximately **35% above FOB**. This means if you buy USD 30,000 of spare parts from CrestMAX FOB, your total cost to get them to your Lagos warehouse is approximately **USD 40,700**.
+**All figures above are indicative for planning purposes only.** Actual costs vary with freight market rates, your specific HS code duty rates, agent fees, and port charges at time of clearance. Use this table as a framework — replace each line with live quotes from your freight forwarder, clearing agent, and CrestMAX before committing to a shipment.
 
-The unit economics remain highly attractive: parts purchased at USD 30,000 landed at USD 40,700 can be sold at Ladipo-equivalent wholesale prices generating **USD 75,000–95,000** in revenue — a 84–133% return on goods cost, or approximately 50–60% gross margin.`,
+**Rule of thumb:** on a typical mixed spare parts shipment, total landed cost (all-in to Lagos warehouse) tends to run **30–40% above FOB goods value**. The exact percentage depends heavily on the duty rate applicable to your HS codes.`,
       },
       {
         heading: "How to Reduce Your Import Costs",

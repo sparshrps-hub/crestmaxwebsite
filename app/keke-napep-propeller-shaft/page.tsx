@@ -112,45 +112,24 @@ export default function KeKeNapepPropellerShaftPage() {
         </div>
       </section>
 
-      {/* Specs */}
+      {/* What we supply */}
       <section style={{ padding: "80px 24px", background: "var(--cm-navy)" }}>
-        <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "10px", letterSpacing: "4px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "16px", textAlign: "center" }}>Technical Specifications</p>
-          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "36px", letterSpacing: "3px", color: "#FFFFFF", textTransform: "uppercase", marginBottom: "48px", textAlign: "center" }}>
-            What We Supply
+        <div style={{ maxWidth: "860px", margin: "0 auto" }}>
+          <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "10px", letterSpacing: "4px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "16px" }}>What We Supply</p>
+          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "36px", letterSpacing: "3px", color: "#FFFFFF", textTransform: "uppercase", marginBottom: "24px" }}>
+            Propeller Shaft — How to Order
           </h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
-            {[
-              {
-                label: "Compatible Models",
-                value: "Bajaj RE (all variants), TVS King, Piaggio Ape TD",
-              },
-              {
-                label: "Material",
-                value: "Forged alloy steel shaft, greaseable universal joints at both ends",
-              },
-              {
-                label: "Balancing",
-                value: "Dynamically balanced to minimise vibration — critical for high-cycle commercial use",
-              },
-              {
-                label: "Fitment",
-                value: "Direct OEM-compatible replacement — no modification required",
-              },
-              {
-                label: "HS Code (India Export)",
-                value: "8708.99 — parts and accessories of motor vehicles",
-              },
-              {
-                label: "Packaging",
-                value: "Individual foam-lined cartons, 4–6 units per master carton",
-              },
-            ].map(({ label, value }) => (
-              <div key={label} style={{ background: "var(--cm-navy-mid)", border: "1px solid var(--cm-gold-border)", borderRadius: "2px", padding: "28px 24px" }}>
-                <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "10px", letterSpacing: "3px", color: "rgba(255,255,255,0.35)", textTransform: "uppercase", marginBottom: "10px" }}>{label}</p>
-                <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "rgba(255,255,255,0.8)", lineHeight: "1.6" }}>{value}</p>
-              </div>
-            ))}
+          <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "rgba(255,255,255,0.65)", lineHeight: "1.85", marginBottom: "20px" }}>
+            We supply propeller shafts compatible with Bajaj RE, TVS King, and Piaggio Ape 3-wheelers. Each model variant has different shaft dimensions — the Bajaj RE Compact, RE 4-stroke, and TVS King are not interchangeable. Please specify your exact model and year when enquiring so we confirm the correct fitment.
+          </p>
+          <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "rgba(255,255,255,0.65)", lineHeight: "1.85", marginBottom: "24px" }}>
+            Shipping FOB Ludhiana or CIF to Apapa, Tema, or Mombasa. Quantities, lead times, and packaging details confirmed at time of order.
+          </p>
+          <div style={{ background: "rgba(201,168,76,0.06)", border: "1px solid var(--cm-gold-border)", borderRadius: "2px", padding: "20px 24px" }}>
+            <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "2px", color: "var(--cm-gold)", margin: "0 0 6px" }}>NOTE</p>
+            <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.55)", lineHeight: "1.7", margin: 0 }}>
+              Dimensional specifications (shaft length, UJ dimensions, spline count) are provided on the part data sheet supplied with each shipment. Contact us with your model details for a fitment confirmation before placing a bulk order.
+            </p>
           </div>
         </div>
       </section>

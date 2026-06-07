@@ -121,11 +121,11 @@ export default function BajajBoxerPistonKitPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
             {[
-              { item: "Piston", detail: "Cast aluminium, 62mm standard bore. Forged crown for heat resistance. Available in +0.25, +0.50, +0.75mm oversize." },
-              { item: "Compression Rings (×2)", detail: "Top ring: chrome-faced. Second ring: cast iron taper face. Correct ring gap pre-set for Boxer bore dimensions." },
-              { item: "Oil Control Ring + Expander", detail: "Three-piece oil ring assembly. Chrome-finished rails with stainless expander for consistent radial tension." },
-              { item: "Gudgeon Pin", detail: "Hardened and ground steel, 15mm diameter. Press-fit to Boxer con-rod specification." },
-              { item: "Circlips (×2)", detail: "Spring steel circlips to retain the gudgeon pin. Full-circle design — not incomplete C-clips." },
+              { item: "Piston", detail: "Cast aluminium piston, standard bore and oversize options available. Confirm your bore size before ordering." },
+              { item: "Compression Rings (×2)", detail: "Top and second compression rings. Chrome-faced top ring for wear resistance." },
+              { item: "Oil Control Ring + Expander", detail: "Three-piece oil ring assembly with expander spring." },
+              { item: "Gudgeon Pin", detail: "Hardened steel gudgeon pin to match Boxer con-rod specification." },
+              { item: "Circlips (×2)", detail: "Full-circle spring steel circlips to retain the gudgeon pin." },
             ].map(({ item, detail }) => (
               <div key={item} style={{ background: "var(--cm-navy-mid)", border: "1px solid var(--cm-gold-border)", borderRadius: "2px", padding: "28px 24px" }}>
                 <p style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "17px", letterSpacing: "2px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "10px" }}>{item}</p>
@@ -136,41 +136,21 @@ export default function BajajBoxerPistonKitPage() {
         </div>
       </section>
 
-      {/* Specs */}
+      {/* Ordering info */}
       <section style={{ padding: "80px 24px", background: "var(--cm-navy-deep)", borderTop: "1px solid var(--cm-gold-border)" }}>
         <div style={{ maxWidth: "860px", margin: "0 auto" }}>
-          <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "10px", letterSpacing: "4px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "14px" }}>Specifications</p>
-          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "32px", letterSpacing: "2px", color: "#FFFFFF", textTransform: "uppercase", marginBottom: "32px" }}>
-            Technical Data
+          <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "10px", letterSpacing: "4px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "14px" }}>Ordering Info</p>
+          <h2 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "32px", letterSpacing: "2px", color: "#FFFFFF", textTransform: "uppercase", marginBottom: "24px" }}>
+            How to Order
           </h2>
-          <div style={{ overflowX: "auto" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", fontFamily: "Nunito Sans, sans-serif", fontSize: "14px" }}>
-              <thead>
-                <tr>
-                  {["Parameter", "Specification"].map((h) => (
-                    <th key={h} style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "13px", letterSpacing: "1px", textTransform: "uppercase", color: "var(--cm-gold)", background: "var(--cm-navy-deep)", padding: "12px 16px", border: "1px solid var(--cm-gold-border)", textAlign: "left" }}>{h}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {[
-                  ["Compatible Engine", "Bajaj Boxer BM150, Boxer AT150"],
-                  ["Standard Bore Diameter", "62.00 mm"],
-                  ["Oversize Options", "+0.25mm (62.25) · +0.50mm (62.50) · +0.75mm (62.75)"],
-                  ["Piston Material", "Cast aluminium alloy (A413)"],
-                  ["Gudgeon Pin Diameter", "15.0 mm"],
-                  ["Ring Height (compression)", "Top: 1.2mm · Second: 1.2mm"],
-                  ["Oil Ring Width", "2.5mm"],
-                  ["HS Code (India Export)", "8409.91 — parts for spark-ignition engines"],
-                  ["Units per Carton", "10 kits"],
-                ].map(([param, spec]) => (
-                  <tr key={param}>
-                    <td style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.8)", padding: "12px 16px", border: "1px solid rgba(255,255,255,0.06)", fontWeight: 600 }}>{param}</td>
-                    <td style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.55)", padding: "12px 16px", border: "1px solid rgba(255,255,255,0.06)" }}>{spec}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "15px", color: "rgba(255,255,255,0.65)", lineHeight: "1.85", marginBottom: "20px" }}>
+            Exact bore dimensions, ring tolerances, and material grades vary by production batch and are confirmed at time of order. Always measure your cylinder bore before ordering — we supply standard bore and oversize options to suit rebored cylinders. Share your Bajaj Boxer model and year when you contact us and we will confirm the correct fitment.
+          </p>
+          <div style={{ background: "rgba(201,168,76,0.06)", border: "1px solid var(--cm-gold-border)", borderRadius: "2px", padding: "20px 24px" }}>
+            <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "2px", color: "var(--cm-gold)", margin: "0 0 6px" }}>NOTE</p>
+            <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "14px", color: "rgba(255,255,255,0.55)", lineHeight: "1.7", margin: 0 }}>
+              Technical specifications (bore diameter, ring dimensions, material grade) are provided on the product data sheet accompanying each shipment. Contact us for a sample data sheet before placing a bulk order.
+            </p>
           </div>
         </div>
       </section>
@@ -184,10 +164,10 @@ export default function BajajBoxerPistonKitPage() {
           </h2>
           <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
             {[
-              { q: "What is included in the Bajaj Boxer piston kit?", a: "A complete kit from CrestMAX includes: one cast aluminium piston (standard bore 62mm or oversize), a set of piston rings (two compression rings and one oil control ring with expander), one hardened steel gudgeon pin, and two circlips." },
-              { q: "What bore sizes are available?", a: "We supply standard bore (62.0mm) and oversize options at +0.25mm, +0.50mm, and +0.75mm for rebored cylinders. Always measure the bore before ordering to confirm which size is needed." },
-              { q: "Is this compatible with Bajaj Boxer AT and CT models?", a: "The piston kit is compatible with Bajaj Boxer BM150 and Boxer AT150. The CT100 uses a different 52.4mm bore — please specify your exact model when ordering." },
-              { q: "What is the minimum order from CrestMAX?", a: "Minimum order is one carton (10 kits per carton). Most Nigerian importers order 50–200 kits per shipment alongside other Boxer parts to fill a container." },
+              { q: "What is included in the Bajaj Boxer piston kit?", a: "A complete kit from CrestMAX includes: one cast aluminium piston (standard or oversize), a set of piston rings (two compression rings and one oil control ring with expander), one hardened steel gudgeon pin, and two circlips. Exact specifications are confirmed at time of order." },
+              { q: "What bore sizes are available?", a: "We supply standard bore and oversize options for rebored cylinders. Always measure your cylinder bore before ordering — then contact us to confirm the correct size for your engine." },
+              { q: "Is this compatible with Bajaj Boxer AT and CT models?", a: "The Boxer and CT100 use different bore sizes — they are not interchangeable. Please specify your exact model and year when enquiring so we can confirm the correct fitment." },
+              { q: "What is the minimum order from CrestMAX?", a: "Contact us for current minimum order quantities. Most Nigerian importers order alongside other Boxer parts to fill a container efficiently." },
             ].map(({ q, a }, i) => (
               <div key={i} style={{ background: "var(--cm-navy-mid)", border: "1px solid var(--cm-gold-border)", borderRadius: "2px", padding: "28px" }}>
                 <p style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "17px", letterSpacing: "1px", color: "#FFFFFF", marginBottom: "10px" }}>{q}</p>
