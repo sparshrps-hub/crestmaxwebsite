@@ -55,7 +55,7 @@ export default async function MarketPage({ params }: { params: Promise<{ slug: s
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
-      <section style={{ background: "var(--cm-navy-deep)", paddingTop: "140px", paddingBottom: "80px", textAlign: "center", borderBottom: "1px solid var(--cm-gold-border)", position: "relative", overflow: "hidden" }}>
+      <section style={{ background: "var(--cm-navy-deep)", paddingTop: "174px", paddingBottom: "80px", textAlign: "center", borderBottom: "1px solid var(--cm-gold-border)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(135deg, transparent, transparent 60px, rgba(201,168,76,0.02) 60px, rgba(201,168,76,0.02) 61px)", pointerEvents: "none" }} />
         <div style={{ maxWidth: "760px", margin: "0 auto", padding: "0 24px", position: "relative", zIndex: 1 }}>
           <Link href="/markets" style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "4px", color: "rgba(201,168,76,0.6)", textTransform: "uppercase", textDecoration: "none", display: "inline-block", marginBottom: "20px" }}>
@@ -157,6 +157,34 @@ export default async function MarketPage({ params }: { params: Promise<{ slug: s
           </div>
         </div>
       </section>
+
+      {/* Related resources — country-specific cross-links */}
+      {(market.slug === "nigeria" || market.slug === "ghana" || market.slug === "kenya") && (
+        <section style={{ padding: "60px 24px", background: "var(--cm-navy)", borderTop: "1px solid var(--cm-gold-border)" }}>
+          <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+            <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "10px", letterSpacing: "4px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "20px" }}>Related Guides</p>
+            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
+              {market.slug === "nigeria" && <>
+                <Link href="/import-guide/nigeria" style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "var(--cm-gold)", border: "1px solid var(--cm-gold-border)", padding: "10px 18px", borderRadius: "2px", textDecoration: "none" }}>🇳🇬 Full Nigeria Import Guide →</Link>
+                <Link href="/bajaj-spare-parts-nigeria" style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "var(--cm-gold)", border: "1px solid var(--cm-gold-border)", padding: "10px 18px", borderRadius: "2px", textDecoration: "none" }}>Bajaj Parts for Nigeria →</Link>
+                <Link href="/keke-napep-parts-nigeria" style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "var(--cm-gold)", border: "1px solid var(--cm-gold-border)", padding: "10px 18px", borderRadius: "2px", textDecoration: "none" }}>Keke Napep Parts →</Link>
+                <Link href="/blog/how-to-import-bajaj-spare-parts-from-india-to-nigeria" style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "var(--cm-gold)", border: "1px solid var(--cm-gold-border)", padding: "10px 18px", borderRadius: "2px", textDecoration: "none" }}>How to Import to Nigeria →</Link>
+                <Link href="/hs-codes-motorcycle-spare-parts" style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "var(--cm-gold)", border: "1px solid var(--cm-gold-border)", padding: "10px 18px", borderRadius: "2px", textDecoration: "none" }}>HS Codes Reference →</Link>
+              </>}
+              {market.slug === "ghana" && <>
+                <Link href="/import-guide/ghana" style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "var(--cm-gold)", border: "1px solid var(--cm-gold-border)", padding: "10px 18px", borderRadius: "2px", textDecoration: "none" }}>🇬🇭 Full Ghana Import Guide →</Link>
+                <Link href="/bajaj-spare-parts-ghana" style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "var(--cm-gold)", border: "1px solid var(--cm-gold-border)", padding: "10px 18px", borderRadius: "2px", textDecoration: "none" }}>Bajaj Parts for Ghana →</Link>
+                <Link href="/hs-codes-motorcycle-spare-parts" style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "var(--cm-gold)", border: "1px solid var(--cm-gold-border)", padding: "10px 18px", borderRadius: "2px", textDecoration: "none" }}>HS Codes Reference →</Link>
+              </>}
+              {market.slug === "kenya" && <>
+                <Link href="/import-guide/kenya" style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "var(--cm-gold)", border: "1px solid var(--cm-gold-border)", padding: "10px 18px", borderRadius: "2px", textDecoration: "none" }}>🇰🇪 Full Kenya Import Guide →</Link>
+                <Link href="/bajaj-spare-parts-kenya" style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "var(--cm-gold)", border: "1px solid var(--cm-gold-border)", padding: "10px 18px", borderRadius: "2px", textDecoration: "none" }}>Bajaj Parts for Kenya →</Link>
+                <Link href="/hs-codes-motorcycle-spare-parts" style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "var(--cm-gold)", border: "1px solid var(--cm-gold-border)", padding: "10px 18px", borderRadius: "2px", textDecoration: "none" }}>HS Codes Reference →</Link>
+              </>}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA */}
       <section style={{ padding: "80px 24px", background: "var(--cm-navy-mid)", borderTop: "1px solid var(--cm-gold-border)", textAlign: "center" }}>

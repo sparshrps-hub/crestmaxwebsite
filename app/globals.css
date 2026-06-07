@@ -15,6 +15,7 @@
 }
 
 :root {
+  --cm-nav-offset: 174px; /* 34px announcement bar + 68px header + extra breathing room */
   --cm-navy:        #0D1B2A;
   --cm-navy-mid:    #1B2D42;
   --cm-navy-deep:   #0A1520;

@@ -59,7 +59,7 @@ export default function ApplicationsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <section style={{ background: "var(--cm-navy-deep)", paddingTop: "140px", paddingBottom: "64px", textAlign: "center", borderBottom: "1px solid var(--cm-gold-border)" }}>
+      <section style={{ background: "var(--cm-navy-deep)", paddingTop: "174px", paddingBottom: "64px", textAlign: "center", borderBottom: "1px solid var(--cm-gold-border)" }}>
         <div style={{ maxWidth: "800px", margin: "0 auto", padding: "0 24px" }}>
           <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "11px", letterSpacing: "5px", color: "var(--cm-gold)", textTransform: "uppercase", marginBottom: "20px" }}>Compatibility Guide</p>
           <h1 style={{ fontFamily: "Rajdhani, sans-serif", fontWeight: 700, fontSize: "clamp(28px, 5vw, 54px)", letterSpacing: "3px", lineHeight: "1.0", color: "#FFFFFF", textTransform: "uppercase", margin: "0 0 20px" }}>

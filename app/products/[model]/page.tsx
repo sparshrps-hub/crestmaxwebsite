@@ -200,7 +200,7 @@ export default async function ModelPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* Hero */}
-      <section style={{ background: "var(--cm-navy-deep)", paddingTop: "140px", paddingBottom: "60px", borderBottom: "1px solid var(--cm-gold-border)", position: "relative", overflow: "hidden" }}>
+      <section style={{ background: "var(--cm-navy-deep)", paddingTop: "174px", paddingBottom: "60px", borderBottom: "1px solid var(--cm-gold-border)", position: "relative", overflow: "hidden" }}>
         <div style={{ position: "absolute", inset: 0, backgroundImage: "repeating-linear-gradient(135deg, transparent, transparent 60px, rgba(201,168,76,0.02) 60px, rgba(201,168,76,0.02) 61px)", pointerEvents: "none" }} />
         <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 24px", position: "relative", zIndex: 1 }}>
           {/* Breadcrumb */}

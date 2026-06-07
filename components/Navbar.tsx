@@ -44,6 +44,15 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Nigeria announcement bar */}
+      <div style={{ background: "#25D366", padding: "7px 20px", textAlign: "center", position: "fixed", top: 0, left: 0, right: 0, zIndex: 1001 }}>
+        <a href="https://wa.me/2349020636510" target="_blank" rel="noopener noreferrer" style={{ fontFamily: "Nunito Sans, sans-serif", fontWeight: 700, fontSize: "12px", letterSpacing: "0.5px", color: "#0A1520", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+          <span>🇳🇬</span>
+          <span>Nigeria importers — WhatsApp us directly: +234 902 063 6510</span>
+          <span style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "10px", letterSpacing: "1px", opacity: 0.7 }}>→</span>
+        </a>
+      </div>
+
       {/* Responsive nav utilities — inline to guarantee they work independent of Tailwind */}
       <style>{`
         .cm-nav-desktop { display: none !important; }
@@ -61,7 +70,7 @@ export default function Navbar() {
       <header
         style={{
           position: "fixed",
-          top: 0,
+          top: 34,
           left: 0,
           right: 0,
           zIndex: 1000,
