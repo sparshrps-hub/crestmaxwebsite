@@ -154,7 +154,16 @@ export default function Footer() {
       <div style={{ borderTop: "1px solid var(--cm-border)", padding: "20px 24px" }}>
         <div style={{ maxWidth: "1280px", margin: "0 auto", display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "8px" }}>
           <p style={{ fontFamily: "Nunito Sans, sans-serif", fontSize: "13px", color: "rgba(255,255,255,0.35)" }}>
-            © 2025 CrestMAX (A Venture by RPS Infrastructures) · All Rights Reserved
+            © 2026 CrestMAX (A Venture by{" "}
+            <a
+              href="https://rpsinfrastructures.com"
+              target="_blank"
+              rel="noopener"
+              style={{ color: "rgba(255,255,255,0.55)", textDecoration: "underline" }}
+            >
+              RPS Infrastructures
+            </a>
+            ) · All Rights Reserved
           </p>
           <p style={{ fontFamily: "IBM Plex Mono, monospace", fontSize: "12px", color: "var(--cm-gold-deep)", letterSpacing: "1px" }}>
             Made in India, Trusted in Africa

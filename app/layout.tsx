@@ -114,6 +114,11 @@ const organizationSchema = {
   sameAs: [
     "https://share.google/5eRgqSVV46VCD5zOu",
   ],
+  parentOrganization: {
+    "@type": "Organization",
+    name: "RPS Infrastructures",
+    url: "https://rpsinfrastructures.com",
+  },
   knowsAbout: [
     "Bajaj Boxer spare parts export",
     "TVS HLX spare parts",
